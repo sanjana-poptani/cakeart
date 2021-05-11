@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>CakeArt - Blog</title>
+		<description><![CDATA[]]></description>
+		<link>http://cakeart.foobla.com/blog/80-cream</link>
+		<lastBuildDate>Thu, 28 Nov 2019 12:51:35 +0000</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="http://cakeart.foobla.com/blog/80-cream?format=feed&amp;type=rss"/>
+		<language>en-gb</language>
+		<managingEditor>noreply@foobla.com (cakeart)</managingEditor>
+		<item>
+			<title>Banana Split Ice Cream Cake</title>
+			<link>http://cakeart.foobla.com/blog/80-cream/87-banana-split-ice-cream</link>
+			<guid isPermaLink="true">http://cakeart.foobla.com/blog/80-cream/87-banana-split-ice-cream</guid>
+			<description><![CDATA[<p class="canvas-text Mb(1.0em) Mb(0)--sm Mt(0.8em)--sm canvas-atom" style="box-sizing: border-box; margin: 0px 0px 20px; padding: 0px; color: #7a7a7a; font-family: Roboto; font-size: 15px; line-height: 22.5px; text-align: justify;" data-type="text" data-reactid=".fjilf71ngg.0.2.4.0.0.$Col1-0-ContentCanvas.2.4.0:$3">Our favorite childhood dessert is taken to a whole new level in a delicious ice cream cake from Julia Hampton of the baking blog Sprinkled With Jules. Hampton is currently attending Merced College in Merced, California, and working as a part-time baker at Cafe La Mo nearby. Her blog is a great place for first-time bakers to learn tips and recipes, from how to make the perfect scone, to how to scallop frost a cake, how to make vegan meringues. This brings us to how her stunning ice cream cake came to life.</p>
+]]></description>
+			<author>noreply@foobla.com (Super User)</author>
+			<category>Cream</category>
+			<pubDate>Tue, 02 Feb 2016 08:06:00 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

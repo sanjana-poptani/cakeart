@@ -1,0 +1,40 @@
+
+from django.urls import path
+from . import views
+from vendors import views as v2
+print("App URLS Called")
+urlpatterns = [
+    path('myacc/',views.loadusrpwd,name='acc'),
+    path('reg/',views.regpg,name='rg'),
+    path('clctdata/',views.collctdata,name='cllct'),
+    path('otpp/',views.otp_load,name='otp'),
+    path('index/',views.loadindex,name="index"),
+    path('login/',views.LoginUser,name="login"),
+    path('blog/',views.loadblogpg,name="blog"),
+    path('recipes/',views.loadrecipe,name="recipe"),
+    path('shp/',views.loadbshop,name="shop"),
+    path('fpwd/',views.forgtpwd,name='fpwd'),
+    path('shw/',views.showdata,name='showdt'),
+    path('show/',views.show,name='show'),
+    path('blogaga/',views.blog2,name="blogg"),
+    path('recipe/',views.recipe2,name="recipe2"),
+    path('contact/',views.contact,name="contact"),
+    path('abt/',views.loadabt,name="abt"),
+    path('login/',views.LoginUser,name="login"),
+    path('member/',views.membership,name="member"),
+    path('',views.loadvisitorindex,name="vindex"),
+    #path('',views.index,name='vindex'),
+    path('newotp/',views.forgotPassword,name="frgtpswd"),
+    path('myprofile/<int:pk>',views.loadprofile,name="myprofile"),
+    path('updtprofile/<int:pk>',views.updtprofile,name="updtprofile"),
+    path('chngepwd/',views.loadchngepwd,name="chngepwd"),
+    path('chngedpwd/',views.changepasswd,name="chngedpwd"),
+    path('pwdchnge/',views.chngedpwd,name="pwdchnge"),
+    path('logout/',views.logout,name="logout"),
+    path('otp2/',views.otp_load2,name="otp2"),
+    path('profileupdt/<int:pk>',views.profileupdt,name="profileupdt"),
+    path('cart/',views.loadcart,name="cart"),
+    path('fdbkrprt/',views.feedback_report,name="feebk"),
+    path('feebk/',views.feedback_reply,name="fdbk"),
+    path('callback/', v2.callback, name='callback'),
+]

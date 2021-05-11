@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>CakeArt - CakeArt</title>
+		<description><![CDATA[]]></description>
+		<link>http://cakeart.foobla.com/component/tags/tag/2</link>
+		<lastBuildDate>Thu, 28 Nov 2019 12:51:44 +0000</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="http://cakeart.foobla.com/component/tags/tag/2-miss-universe?format=feed&amp;type=rss"/>
+		<language>en-gb</language>
+		<managingEditor>noreply@foobla.com (cakeart)</managingEditor>
+		<item>
+			<title>Black Forest Gateau</title>
+			<link>http://cakeart.foobla.com/component/content/article?id=77:black-forest-gateau</link>
+			<guid isPermaLink="true">http://cakeart.foobla.com/component/content/article?id=77:black-forest-gateau</guid>
+			<description><![CDATA[<p class="canvas-text Mb(1.0em) Mb(0)--sm Mt(0.8em)--sm canvas-atom" style="box-sizing: border-box; margin: 0px 0px 20px; padding: 0px; color: #7a7a7a; font-family: Roboto; font-size: 15px; line-height: 22.5px;" data-type="text" data-reactid=".12v85mznaio.0.2.4.0.0.$Col1-0-ContentCanvas.2.4.0:$2">Today’s cake is a go-big-or-go-home kind of a cake from Butter and Brioche’s Thalia Ho, who we just can’t get enough of her gorgeous creations. For this German dessert, she soaks cherries in a kirsh liqueur until they’re plump with booze. She then nestles them between layers of dark chocolate cake and billowy mascarpone frosting.</p>
+]]></description>
+			<category>Black Forest Gateau</category>
+			<pubDate>Mon, 02 Feb 2015 20:29:50 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

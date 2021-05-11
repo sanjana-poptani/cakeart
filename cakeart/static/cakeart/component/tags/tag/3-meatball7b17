@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<feed xmlns="http://www.w3.org/2005/Atom"  xml:lang="en-gb">
+	<title type="text">CakeArt - CakeArt</title>
+	<subtitle type="text"></subtitle>
+	<link rel="alternate" type="text/html" href="http://cakeart.foobla.com"/>
+	<id>http://cakeart.foobla.com/component/tags/tag/3-meatball</id>
+	<updated>2019-11-28T12:51:40+00:00</updated>
+	<author>
+		<name>cakeart</name>
+		<email>noreply@foobla.com</email>
+	</author>
+	<generator uri="https://www.joomla.org">Joomla! - Open Source Content Management</generator>
+	<link rel="self" type="application/atom+xml" href="http://cakeart.foobla.com/component/tags/tag/3-meatball?format=feed&amp;type=atom"/>
+	<entry>
+		<title>Chocolate Marble Cake</title>
+		<link rel="alternate" type="text/html" href="http://cakeart.foobla.com/component/content/article?id=74:chocolate-marble-cake"/>
+		<published>2015-02-02T20:29:50+00:00</published>
+		<updated>2015-02-02T20:29:50+00:00</updated>
+		<id>http://cakeart.foobla.com/component/content/article?id=74:chocolate-marble-cake</id>
+		<author>
+			<name>Super User</name>
+		</author>
+		<summary type="html">&lt;p class=&quot;canvas-text Mb(1.0em) Mb(0)--sm Mt(0.8em)--sm canvas-atom&quot; style=&quot;box-sizing: border-box; margin: 0px 0px 20px; padding: 0px; color: #7a7a7a; font-family: Roboto; font-size: 15px; line-height: 22.5px;&quot; data-type=&quot;text&quot; data-reactid=&quot;.2cgjdhbkjr4.0.2.4.0.0.$Col1-0-ContentCanvas.2.4.0:$2&quot;&gt;We found today’s cake on Zoe Bakes. It’s run by Zoë François, and, well, she knows how to bake!&lt;/p&gt;
+&lt;p class=&quot;canvas-text Mb(1.0em) Mb(0)--sm Mt(0.8em)--sm canvas-atom&quot; style=&quot;box-sizing: border-box; margin: 0px 0px 20px; padding: 0px; color: #7a7a7a; font-family: Roboto; font-size: 15px; line-height: 22.5px;&quot; data-type=&quot;text&quot; data-reactid=&quot;.2cgjdhbkjr4.0.2.4.0.0.$Col1-0-ContentCanvas.2.4.0:$3&quot;&gt;François has authored two best-selling bread books, &lt;i style=&quot;box-sizing: border-box; margin: 0px; padding: 0px;&quot;&gt;The New Artisan Bread in Five Minutes a Day &lt;/i&gt;and &lt;i style=&quot;box-sizing: border-box; margin: 0px; padding: 0px;&quot;&gt;Artisan Pizza and Flatbread in Five Minutes a Day, s&lt;/i&gt;he’s a graduate of New York’s Culinary Institute of America, and she has worked as a pastry chef in one of Minneapolis’s finest restaurants, Tilia. She now teaches baking all over the country.&lt;/p&gt;
+</summary>
+		<content type="html">&lt;p class=&quot;canvas-text Mb(1.0em) Mb(0)--sm Mt(0.8em)--sm canvas-atom&quot; style=&quot;box-sizing: border-box; margin: 0px 0px 20px; padding: 0px; color: #7a7a7a; font-family: Roboto; font-size: 15px; line-height: 22.5px;&quot; data-type=&quot;text&quot; data-reactid=&quot;.2cgjdhbkjr4.0.2.4.0.0.$Col1-0-ContentCanvas.2.4.0:$2&quot;&gt;We found today’s cake on Zoe Bakes. It’s run by Zoë François, and, well, she knows how to bake!&lt;/p&gt;
+&lt;p class=&quot;canvas-text Mb(1.0em) Mb(0)--sm Mt(0.8em)--sm canvas-atom&quot; style=&quot;box-sizing: border-box; margin: 0px 0px 20px; padding: 0px; color: #7a7a7a; font-family: Roboto; font-size: 15px; line-height: 22.5px;&quot; data-type=&quot;text&quot; data-reactid=&quot;.2cgjdhbkjr4.0.2.4.0.0.$Col1-0-ContentCanvas.2.4.0:$3&quot;&gt;François has authored two best-selling bread books, &lt;i style=&quot;box-sizing: border-box; margin: 0px; padding: 0px;&quot;&gt;The New Artisan Bread in Five Minutes a Day &lt;/i&gt;and &lt;i style=&quot;box-sizing: border-box; margin: 0px; padding: 0px;&quot;&gt;Artisan Pizza and Flatbread in Five Minutes a Day, s&lt;/i&gt;he’s a graduate of New York’s Culinary Institute of America, and she has worked as a pastry chef in one of Minneapolis’s finest restaurants, Tilia. She now teaches baking all over the country.&lt;/p&gt;
+</content>
+		<category term="Chocolate Marble Cake" />
+	</entry>
+</feed>

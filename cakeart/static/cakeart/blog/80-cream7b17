@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<feed xmlns="http://www.w3.org/2005/Atom"  xml:lang="en-gb">
+	<title type="text">CakeArt - Blog</title>
+	<subtitle type="text"></subtitle>
+	<link rel="alternate" type="text/html" href="http://cakeart.foobla.com"/>
+	<id>http://cakeart.foobla.com/blog/80-cream</id>
+	<updated>2019-11-28T12:51:36+00:00</updated>
+	<author>
+		<name>cakeart</name>
+		<email>noreply@foobla.com</email>
+	</author>
+	<generator uri="https://www.joomla.org">Joomla! - Open Source Content Management</generator>
+	<link rel="self" type="application/atom+xml" href="http://cakeart.foobla.com/blog/80-cream?format=feed&amp;type=atom"/>
+	<entry>
+		<title>Banana Split Ice Cream Cake</title>
+		<link rel="alternate" type="text/html" href="http://cakeart.foobla.com/blog/80-cream/87-banana-split-ice-cream"/>
+		<published>2016-02-02T08:06:00+00:00</published>
+		<updated>2016-02-02T08:06:00+00:00</updated>
+		<id>http://cakeart.foobla.com/blog/80-cream/87-banana-split-ice-cream</id>
+		<author>
+			<name>Super User</name>
+			<email>noreply@foobla.com</email>
+		</author>
+		<summary type="html">&lt;p class=&quot;canvas-text Mb(1.0em) Mb(0)--sm Mt(0.8em)--sm canvas-atom&quot; style=&quot;box-sizing: border-box; margin: 0px 0px 20px; padding: 0px; color: #7a7a7a; font-family: Roboto; font-size: 15px; line-height: 22.5px; text-align: justify;&quot; data-type=&quot;text&quot; data-reactid=&quot;.fjilf71ngg.0.2.4.0.0.$Col1-0-ContentCanvas.2.4.0:$3&quot;&gt;Our favorite childhood dessert is taken to a whole new level in a delicious ice cream cake from Julia Hampton of the baking blog Sprinkled With Jules. Hampton is currently attending Merced College in Merced, California, and working as a part-time baker at Cafe La Mo nearby. Her blog is a great place for first-time bakers to learn tips and recipes, from how to make the perfect scone, to how to scallop frost a cake, how to make vegan meringues. This brings us to how her stunning ice cream cake came to life.&lt;/p&gt;
+</summary>
+		<content type="html">&lt;p class=&quot;canvas-text Mb(1.0em) Mb(0)--sm Mt(0.8em)--sm canvas-atom&quot; style=&quot;box-sizing: border-box; margin: 0px 0px 20px; padding: 0px; color: #7a7a7a; font-family: Roboto; font-size: 15px; line-height: 22.5px; text-align: justify;&quot; data-type=&quot;text&quot; data-reactid=&quot;.fjilf71ngg.0.2.4.0.0.$Col1-0-ContentCanvas.2.4.0:$3&quot;&gt;Our favorite childhood dessert is taken to a whole new level in a delicious ice cream cake from Julia Hampton of the baking blog Sprinkled With Jules. Hampton is currently attending Merced College in Merced, California, and working as a part-time baker at Cafe La Mo nearby. Her blog is a great place for first-time bakers to learn tips and recipes, from how to make the perfect scone, to how to scallop frost a cake, how to make vegan meringues. This brings us to how her stunning ice cream cake came to life.&lt;/p&gt;
+</content>
+		<category term="Cream" />
+	</entry>
+</feed>

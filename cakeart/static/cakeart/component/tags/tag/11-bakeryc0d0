@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>CakeArt - CakeArt</title>
+		<description><![CDATA[]]></description>
+		<link>http://cakeart.foobla.com/component/tags/tag/11</link>
+		<lastBuildDate>Thu, 28 Nov 2019 12:51:51 +0000</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="http://cakeart.foobla.com/component/tags/tag/11-bakery?format=feed&amp;type=rss"/>
+		<language>en-gb</language>
+		<managingEditor>noreply@foobla.com (cakeart)</managingEditor>
+		<item>
+			<title>Baking fun with John Doe</title>
+			<link>http://cakeart.foobla.com/component/content/article?id=86:baking-fun-with-john-doe</link>
+			<guid isPermaLink="true">http://cakeart.foobla.com/component/content/article?id=86:baking-fun-with-john-doe</guid>
+			<description><![CDATA[<p class="canvas-text Mb(1.0em) Mb(0)--sm Mt(0.8em)--sm canvas-atom" style="box-sizing: border-box; margin: 0px 0px 20px; padding: 0px; color: #7a7a7a; font-family: Roboto; font-size: 15px; line-height: 22.5px;" data-type="text" data-reactid=".5la0c930u8.0.2.4.0.0.$Col1-0-ContentCanvas.2.4.0:$2">Today’s cake is a gorgeous green tea-infused dessert that’s not only delicious but a breeze to make. From start to finish it takes less than 20 minutes to assemble and calls for only three ingredients — matcha powder, whipped cream, and Nabisco’s Famous Chocolate Wafers. The dessert is a riff of the famous chocolate refrigerator roll, also known as an icebox cake. It comes from i am a food blog’s Stephanie Le in Vancouver. The miniature cake is an example of what Le does best — taking an old favorite, adding her own spin with inviting ingredients, and capturing it all with beautiful, lush photos. It’s no wonder Saveur named her online recipe journal Best Blog of the Year in 2014.</p>
+]]></description>
+			<category>Baking fun with John Doe</category>
+			<pubDate>Wed, 06 Jan 2016 14:52:00 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,222 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Vendor | Home</title>
+    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 10]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+    <!-- Meta -->
+    
+    <!-- Favicon icon -->
+    <link rel="icon" href="{% static '/vendors/images/favicon.ico' %}" type="image/x-icon">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="{% static '/vendors/fonts/fontawesome/css/fontawesome-all.min.css' %}">
+    <!-- animation css -->
+    <link rel="stylesheet" href="{% static '/vendors/plugins/animation/css/animate.min.css' %}">
+    <!-- vendor css -->
+    <link rel="stylesheet" href="{% static '/vendors/css/style.css' %}">
+
+</head>
+
+<body>
+    <!-- [ Pre-loader ] start -->
+    <div class="loader-bg">
+        <div class="loader-track">
+            <div class="loader-fill"></div>
+        </div>
+    </div>
+    <!-- [ Pre-loader ] End -->
+
+    <!-- [ navigation menu ] start -->
+    <nav class="pcoded-navbar">
+        <div class="navbar-wrapper">
+                <div class="navbar-content scroll-div" style="font-size: 20px">
+                        <ul class="nav pcoded-inner-navbar">
+                                <li data-username="Manage lists" class="nav-item pcoded-hasmenu" style="color: black;">
+                                    <a href="javascript:" class="nav-link " style="color: white; "><span class="pcoded-micon" style="color: white"><i class="feather icon-box"></i></span><span class="pcoded-mtext" style="color: white;">Manage</span></a>
+                                    <ul class="pcoded-submenu">
+                                        <li class="nav-item"><a href="javascript:" class="nav-link " style="color: white;"><span class="pcoded-micon"><i class="feather icon-box"></i></span><span class="pcoded-mtext">Orders</span></a>
+                                            
+                                        </li>
+                                        <li class="nav-item"><a href="javascript:" class="nav-link " style="color: white;"><span class="pcoded-micon"><i class="feather icon-box"></i></span><span class="pcoded-mtext">Sales</span></a>
+                                            
+                                        </li>
+                                        <li class="nav-item pcoded-hasmenu"><a href="javascript:" class="nav-link " style="color: white;"><span class="pcoded-micon"><i class="feather icon-box"></i></span><span class="pcoded-mtext">Products</span></a>
+                                            <ul class="pcoded-submenu">
+                                                    <li class=""><a href="{% url 'addpro' %}" class="" style="color: white;">Add</a></li>
+                                                    <li class=""><a href="" class="" style="color: white;">Edit</a></li>
+                                                    <li class=""><a href="{% url 'showproduct11' %}" class="" style="color: white;">Place Order</a></li>
+                                            </ul>
+                                        </li>
+                                        
+                                    </ul>
+                                </li>
+                                <li class="" data-username="View Lists"><a href="{% url 'cate' %}" style="color: white;"><span class="pcoded-micon" style="color: white;"><i class="feather icon-box"></i></span style="color: white;">View Categories</a>                       
+                                </li>
+                                <li class="nav-item pcoded-hasmenu"><a href="javascript:" class="nav-link " style="color: white;"><span class="pcoded-micon"><i class="feather icon-box"></i></span><span class="pcoded-mtext">View Reports</span></a>
+                                    <ul class="pcoded-submenu">
+                                        <li class=""><a href="" class="" style="color: white;">Orders</a></li>
+                                        <li class=""><a href="" class="" style="color: white;">Sales</a></li>
+                                        <li class=""><a href="" class="" style="color: white;">Products</a></li>
+                                    </ul>
+                                </li>
+                           </ul>
+                </div>
+        </div>
+    </nav>
+    <!-- [ navigation menu ] end -->
+
+    <!-- [ Header ] start -->
+    <header class="navbar pcoded-header navbar-expand-lg navbar-light">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li><a href="javascript:" class="full-screen" onclick="javascript:toggleFullScreen()"><i class="feather icon-maximize"></i></a></li>
+                </ul>
+            <ul class="navbar-nav ml-auto">
+                <li>
+                    <div class="dropdown drp-user">
+                        <a href="javascript:" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="icon feather icon-settings"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right profile-notification">
+                            <div class="pro-head">
+                                <img src="{% static '/vendors/images/user/avatar-1.jpg' %}" class="img-radius" alt="User-Profile-Image">
+                                <span>{% if all_cust %}
+                                    {{all_cust.firstname}} </span>
+                                <a href="{% url 'logout' %}" class="dud-logout" title="Logout">
+                                    <i class="feather icon-log-out"></i>
+                                </a>
+                            </div>
+                            <ul class="pro-body">
+                                <li><a href="{% url 'reqpasswrd' %}" class="dropdown-item"><i class="feather icon-settings"></i>  Change Password </a></li>
+                                <li><a href="{% url 'profile' pk=all_cust.id %}" class="dropdown-item"><i class="feather icon-user"></i> Profile</a></li>
+                            </ul>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- [ Header ] end -->
+
+    <!-- [ Main Content ] start -->
+    <section class="pcoded-main-container">
+        <div class="pcoded-wrapper">
+            <div class="pcoded-content">
+                <div class="pcoded-inner-content">
+                    <!-- [ breadcrumb ] start -->
+                    <div class="page-header">
+                        <div class="page-block">
+                            <div class="row align-items-center">
+                                <div class="col-md-12">
+                                    <div class="page-header-title">
+                                        <h5 class="m-b-10">Products</h5>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                            function clickevent(){
+                                return confirm("Are you sure you want to delete?")
+                            }
+                            function callfn(){
+                                far=clickevent();
+                                if(far==true){
+                                    alert("One item deleted successfully!!")
+                                }
+                            }
+                    </script>
+                    <!-- [ breadcrumb ] end -->
+                                <!-- [ Hover-table ] start -->
+                    <div class="col-xl-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Order Products</h3> 
+                                <!-- <button type="submit" style="color: white;background: #3f4d67; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-style: bold; align-self: right;font-size: x-large;float: right;"> 🛒 </button>              -->
+                            </div>
+                                <div class="table-responsive">
+                                        <form name="frm" method="POST" action="{% url 'makepayment' %}">
+                                                {% csrf_token %}
+                                    <table class="table table-hover" id="form" style="width:100%">
+                                        
+                                        <thead style="font-family:'Times New Roman', Times, serif; font-size:x-large; color:black">
+                                            <tr>
+                                                <td style="text-align: center"> Product Image </td>
+                                                <td style="width: 1px;"> Product Name </td>
+                                                <td> Baker Name </td>
+                                                <td> Product Price </td>
+                                                <td> Qty </td>
+                                                <td> Total </td>
+                                                <td> Name over cake </td>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="totals-value" style="font-family:Arial, Helvetica, sans-serif ; font-size:large;">
+                                            
+                                            {% if cartl %}
+                                                    {% for u in cartl %} 
+                                                    <tr class="product">
+                                                        <td> <img class="proimg" src="{{MEDIA_URL}}{{u.prodid.product_image.url}}" style=" border: 5px solid black;" height="200" width="200"></img>  </td>
+                                                        <td><b><input type="hidden" name="pid" class="pid" value="{{u.prodid.product_name}}"/> 
+                                                            <span class="pnm">{{u.prodid.product_name}} </span></b><br>
+                                                            <textarea cols="10" rows="5" style="border: 0px;overflow: hidden; resize: none;" readonly>{{u.prodid.product_desc}}</textarea> 
+                                                            <!-- jkdfkljsdlfskdflksdjfhsdklghfdkljhgfdkjlghfdkjkdlglhdfkhgdjfdklgjfgkhgkl -->
+                                                        </td>
+                                                        <td> <input type="hidden" name="uid" value="u.prodid.user_id.firstname" /> {{u.prodid.user_id.firstname}} </td>
+                                                        <td> ₹<span class="firstNumber" >{{u.prodid.product_price}} </span> </td>
+                                                        <td> {{u.qnty}} </td>
+                                                        <td>   ₹<span class="result">{{u.rowtotal}} </span> </td>
+                                                        <td> {{u.cnm}} </td>
+                                                        
+                                                            <!-- <input type="submit" value="Delete" class="product-removal" name="del"> </td> -->
+                                                    </tr> 
+                                                    {% endfor %}
+                                            {% endif %}
+                                            <tr>
+                                                {% if finaltotal %}
+                                                <td colspan="3">  Subtotal: </td>
+                                                <td colspan="3" style="text-align: center"> ₹<input type="number" value="{{finaltotal}}" name="grandfinal" readonly style="border: 0px;color:gray"> </td>
+                                                {% endif %}    
+                                            </tr>
+                                            <tr>
+                                                    {% if tax %}
+                                                    <td colspan="3">  Tax(5%): </td>
+                                                    <td colspan="3" style="text-align: center"> ₹<input type="number" value="{{tax}}" name="grandfinal" readonly style="border: 0px;color:gray"> </td>
+                                                    {% endif %}    
+                                            </tr>
+                                            <tr>
+                                                    {% if grandfinal %}
+                                                    <td colspan="3">  Grandfinal: </td>
+                                                    <td colspan="3" style="text-align: center"> ₹<input type="text" id="subtotal" value="{{grandfinal}}" name="grandfinal" readonly style="border: 0px;color:gray"></td>
+                                                    {% endif %}    
+                                            </tr>
+                                            <tr>
+                                                <td> Shipping address:</td>
+                                                <td colspan="5"> <textarea rows="3" cols="70" placeholder="Enter your shipping address here" name="shipaddr"> </textarea> </td>
+                                            </tr>
+                                            <tr>
+                                                    <td colspan="3"> <button type="submit" value="Make Payment" style="background-color: #050505;color:white;font-family:Arial, Helvetica, sans-serif;float: left;width: 195px;height: 45px;font-size: x-large" >Make Payment</button></td>
+                                                    <td colspan="3"> <button type="submit" value="Cancel Order" style="background-color: #050505;color:white;font-family:Arial, Helvetica, sans-serif;float: right;width: 195px;height: 45px;font-size: x-large"><a href="{% url 'cartlist' %}" style="color: white"> Cancel Order </a></button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                                </div></div></div>
+                                <!-- [ Hover-table ] end -->
+                            <!-- [ Main Content ] end -->    
+                </div></div>     </div> 
+    </section>
+    <!-- Required Js -->
+<script src="{% static '/bakers/js/vendor-all.min.js' %}"></script>
+<script src="{% static '/bakers/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static '/bakers/js/pcoded.min.js' %}"></script>
+
+</body>
+</html>

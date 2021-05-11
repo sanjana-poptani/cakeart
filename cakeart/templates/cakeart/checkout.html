@@ -1,0 +1,1641 @@
+{% load static %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    	<base href="{% url 'chckout' %}" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="NOINDEX, NOFOLLOW, NOARCHIVE, NOSNIPPET" />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>Your account details</title>
+	<link href="{% static '/cakeart/images/favicon.png' %}" rel="shortcut icon" type="{% static '/cakeart/image/vnd.microsoft.icon' %}" />
+	<link href="{% static '/cakeart/component/search/?Itemid=530&amp;limit=int&amp;addrtype=BT&amp;task=editaddresscart&amp;format=opensearch' %}" rel="search" title="Search CakeArt" type="{% static '/cakeart/application/opensearchdescription+xml' %}" />
+	<link rel="stylesheet" href="{% static '/cakeart/components/com_virtuemart/assets/css/chosen.css?vmver=9293' %}" type="text/css" />
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&amp;subset=greek-ext" type="text/css" />
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Slab:100,300,regular,700&amp;subset=greek-ext" type="text/css" />
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Pacifico:regular&amp;subset=latin" type="text/css" />
+	<link rel="stylesheet" href="{% static '/cakeart/templates/cakeart/css/bootstrap.min.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static '/cakeart/templates/cakeart/css/font-awesome.min.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static '/cakeart/templates/cakeart/css/owl.carousel.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static '/cakeart/templates/cakeart/css/jquery.fancybox-1.3.4.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static '/cakeart/templates/cakeart/css/legacy.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static '/cakeart/templates/cakeart/css/template.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static '/cakeart/templates/cakeart/css/presets/preset4.css' %}" type="text/css" class="preset" />
+	<link rel="stylesheet" href="{% static '/cakeart/media/mod_cmc/css/cmc.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static '/cakeart/media/mod_cmc/css/bootstrap-form.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static '/cakeart/modules/mod_obvm_filter_price/assets/css/jslider.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static '/cakeart/templates/cakeart/css/jquery.fancybox-1.3.4.css?vmver=9293' %}" type="text/css" />
+	<style type="text/css">
+body{font-family:Roboto, sans-serif; font-size:15px; font-weight:normal; }
+h1{font-family:Roboto Slab, sans-serif; font-size:28px; font-weight:700; }
+h2{font-family:Roboto Slab, sans-serif; font-size:24px; font-weight:700; }
+h3{font-family:Roboto Slab, sans-serif; font-size:20px; font-weight:700; }
+h4{font-family:Roboto Slab, sans-serif; font-size:18px; font-weight:700; }
+h5{font-family:Roboto Slab, sans-serif; font-weight:normal; }
+.sp-megamenu-parent{font-family:Roboto Slab, sans-serif; font-size:14px; font-weight:normal; }
+.sp_ob_homeslider .sppb-item .sppb-carousel-caption .sppb-carousel-pro-text h2{font-family:Pacifico, sans-serif; font-weight:normal; }
+ .box_featured .sppb-feature-box-title{font-family:Pacifico, sans-serif; font-weight:normal; }
+ .sp_ob_opening_slider .sppb-carousel-inner .sppb-item .sppb-carousel-caption h2{font-family:Pacifico, sans-serif; font-weight:normal; }
+ #sp-page-title .sp-page-title h1{font-family:Pacifico, sans-serif; font-weight:normal; }
+#sp-top-bar{ background-image:url("{% static '/cakeart/images/bg-header-top.jpg' %}");background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-position:0 0;color:#aaaaaa; }
+#sp-top-bar a{color:#aaaaaa;}
+#sp-top-bar a:hover{color:#ffffff;}
+#sp-social{ background-color:#f9f5ef;padding:32px 0 20px 0; }
+#sp-bottom{ background-image:url("{% static '/cakeart/images/wave-line.png' %}");background-color:#1b1b1b;color:#aaaaaa;padding:60px 0px 30px 0px; }
+#sp-bottom a{color:#ffffff;}
+#sp-bottom a:hover{color:#e47277;}
+#sp-footer{ background-color:#1b1b1b;color:#666666;padding:15px 0; }
+#sp-footer a{color:#ffffff;}
+	</style>
+	<script src="{% static '/cakeart/media/jui/js/jquery.min.js' %}" type="text/javascript"></script>
+	<script src="{% static '/cakeart/media/jui/js/jquery-noconflict.js' %}" type="text/javascript"></script>
+	<script src="{% static '/cakeart/media/jui/js/jquery-migrate.min.js' %}" type="text/javascript"></script>
+	<script src="{% static '/cakeart/media/system/js/mootools-core.js' %}" type="text/javascript"></script>
+	<script src="{% static '/cakeart/media/system/js/core.js' %}" type="text/javascript"></script>
+	<script src="{% static '/cakeart/media/system/js/punycode.js' %}" type="text/javascript"></script>
+	<script src="{% static '/cakeart/media/system/js/validate.js' %}" type="text/javascript"></script>
+	<script src="{% static '/cakeart/components/com_virtuemart/assets/js/jquery-ui.min.js?vmver=1.9.2' %}" type="text/javascript"></script>
+	<script src="{% static '/cakeart/components/com_virtuemart/assets/js/jquery.ui.autocomplete.html.js' %}" type="text/javascript"></script>
+	<script src="{% static '/cakeart/components/com_virtuemart/assets/js/jquery.noconflict.js' %}" type="text/javascript" async="async"></script>
+	<script src="{% static '/cakeart/components/com_virtuemart/assets/js/vmsite.js?vmver=9293' %}" type="text/javascript"></script>
+	<script src="{% static '/cakeart/components/com_virtuemart/assets/js/chosen.jquery.min.js?vmver=9293' %}" type="text/javascript"></script>
+	<script src="{% static '/cakeart/components/com_virtuemart/assets/js/vmprices.js?vmver=9293' %}" type="text/javascript" defer="defer"></script>
+	<script src="{% static '/cakeart/components/com_virtuemart/assets/js/vmkeepalive.js?vmver=9293' %}" type="text/javascript" defer="defer"></script>
+	<script src="{% static '/cakeart/templates/cakeart/js/bootstrap.min.js' %}" type="text/javascript"></script>
+	<script src="{% static '/cakeart/templates/cakeart/js/jquery.sticky.js' %}" type="text/javascript"></script>
+	<script src="{% static '/cakeart/templates/cakeart/js/main.js' %}" type="text/javascript"></script>
+	<script src="{% static '/cakeart/templates/cakeart/js/jquery.counterup.js' %}" type="text/javascript"></script>
+	<script src="{% static '/cakeart/templates/cakeart/js/jquery.waypoints.js' %}" type="text/javascript"></script>
+	<script src="{% static '/cakeart/templates/cakeart/js/owl.carousel.min.js' %}" type="text/javascript"></script>
+	<script src="{% static '/cakeart/templates/cakeart/js/jquery.fancybox-1.3.4.pack.js' %}" type="text/javascript"></script>
+	<script src="{% static '/cakeart/templates/cakeart/js/jquery.mousewheel-3.0.4.pack.js' %}" type="text/javascript"></script>
+	<script src="{% static '/cakeart/media/mod_cmc/js/cmc.js' %}" type="text/javascript"></script>
+	<script src="{% static '/cakeart/media/system/js/html5fallback.js' %}" type="text/javascript"></script>
+	<script src="{% static '/cakeart/modules/mod_obvm_filter_price/assets/js/tmpl.js' %}" type="text/javascript"></script>
+	<script src="{% static '/cakeart/modules/mod_obvm_filter_price/assets/js/jquery.dependClass-0.1.js' %}" type="text/javascript"></script>
+	<script src="{% static '/cakeart/modules/mod_obvm_filter_price/assets/js/draggable-0.1.js' %}" type="text/javascript"></script>
+	<script src="{% static '/cakeart/modules/mod_obvm_filter_price/assets/js/jquery.slider.js' %}" type="text/javascript"></script>
+	<script src="{% static '/cakeart/components/com_virtuemart/assets/js/fancybox/jquery.fancybox-1.3.4.pack.js?vmver=1.3.4' %}" type="text/javascript"></script>
+	<script src="{% static '/cakeart/modules/mod_vm_ajax_cart_ob/assets/js/update_cart.js?vmver=9293' %}" type="text/javascript"></script>
+	<script type="text/javascript">
+if (typeof Virtuemart === "undefined")
+	Virtuemart = {};Virtuemart.vmSiteurl = vmSiteurl = 'http://cakeart.foobla.com/' ;
+Virtuemart.vmLang = vmLang = "&lang=en";
+Virtuemart.vmLangTag = vmLangTag = "en";
+Itemid = '&Itemid=530';
+Virtuemart.addtocart_popup = "1" ; 
+usefancy = true;
+var sessMin = 30;var vmAliveUrl = "index.php?option=com_virtuemart&view=virtuemart&task=keepalive";var maxlps = "4";var minlps = "1";
+jQuery(document).ready(function() {
+
+    new cmc("#cmc-signup-118");
+
+});
+	</script>
+	<script type="text/javascript">
+		(function() {
+			Joomla.JText.load({"JLIB_FORM_FIELD_INVALID":"Invalid field:&#160"});
+		})();
+	</script>
+
+   
+    </head>
+<body class="site com-virtuemart view-user no-layout task-editaddresscart itemid-530 en-gb ltr  sticky-header layout-fluid">
+<div id="back-to-top"><i class="fa fa-angle-double-up"></i></div>
+    <div class="body-innerwrapper">
+        <header id="sp-header"><div class="container"><div class="row"><div id="sp-logo" class="col-xs-8 col-sm-3 col-md-3"><div class="sp-column "><a class="logo" href="/"><h1><img class="sp-default-logo" src="{% static '/cakeart//images/logo.png' %}" alt="CakeArt"></h1></a></div></div><div id="sp-menu" class="col-xs-4 col-sm-9 col-md-9"><div class="sp-column ">			<div class='sp-megamenu-wrapper'>
+				<a id="offcanvas-toggler" class="visible-xs visible-sm" href="#"><i class="fa fa-bars"></i></a>
+				<ul class="sp-megamenu-parent menu-fade hidden-xs hidden-sm">
+					<li class="sp-menu-item"><a href="{% url 'acc' %}"><img src="{% static '/cakeart/images/log.png' %}" height="20" width="20">
+					<li class="sp-menu-item"><a  href="{% url 'index' %}" >Home</a></li><li class="sp-menu-item"><a  href="{% url 'blog' %}" >Blog</a></li><li class="sp-menu-item"><a  href="{% url 'recipe' %}" >Recipes</a></li><li class="sp-menu-item current-item active"><a  href="{% url 'shop' %}" >Shop</a></li><li class="sp-menu-item"><a  href="{% url 'abt' %}" >About us</a></li><li class="sp-menu-item"><a  href="{% url 'contact' %}" >Contact</a></li></ul>			</div>
+		<div class="sp-module ob_cart"><div class="sp-module-content"><div class="vmCartModule" id="vmCartModule">
+	<div class="minicart_hover" id="header-mini-cart">
+		<span class="cart-items-number">
+			<img alt="" src="{% static '/cakeart/images/icon-cart.png' %}">
+			<span class="wrapper-items-number">
+				<span class="items-number total_products">2</span>
+			</span>
+		</span>
+		<div class="clear"></div>
+	</div>
+
+	<div id="hiddencontainer" style=" display: none; ">
+		<ul class="cart_list">
+			<li class="cart_list product_list_widget vmcontainer">
+				<span class="image_ajax_cart">
+				</span>
+				<span class="product_name"></span>
+				<span class="quantity"></span>&nbsp;x&nbsp;
+
+									<div class="subtotal_with_tax" style="float: right;"></div>
+								<div class="clear"></div>
+			</li>
+		</ul>
+	</div>
+
+	<div class="shopping_cart_content vm_cart_products">
+
+		
+		
+		<ul class="cart_list product_list_widget vmcontainer">
+
+								<li class="mini_cart_item product_row">
+						<span class="image_ajax_cart">
+												<img src="{% static '/cakeart/images/stories/virtuemart/product/Bacca-di-montagni2.jpg' %}" alt="">
+												</span>
+						<span class="product_name"><a href="{% static '/cakeart/shop/celebration/bacca-di-montagnia-detail' %}" >Bacca di montagnia</a></span>
+						<span class="quantity">2</span>&nbsp;x&nbsp;
+													$20												<div class="clear"></div>
+					</li>
+						</ul><!-- end product list -->
+
+		<p class="total">
+							Total <strong>$20</strong>					</p>
+
+
+		<p class="buttons show_cart">
+			<a style ="float:right;" href="{% url 'cart' %}" rel="nofollow" >Show Cart</a>			<a href="{% url 'chckout' %}" class="button checkout wc-forward">Checkout</a>
+		</p>
+
+		
+
+	</div>
+
+	<div style="clear:both;"></div>
+		<div class="payments-signin-button" ></div>
+	<noscript>
+	Please wait	</noscript>
+</div>
+
+
+<script id="vm.CartModule.UpdateModule_js" type="text/javascript">//<![CDATA[ 
+jQuery(document).ready(function(){
+    jQuery("body").live("updateVirtueMartCartModule", function(e) {
+        jQuery("#vmCartModule").updateVirtueMartCartModule();
+    });
+}); //]]>
+</script>
+</div></div><div class="sp-module  search_top"><div class="sp-module-content"><!--BEGIN Search Box -->
+
+<div class="icon_top">
+<button data-toggle="modal" data-target="#searchModal">
+	<i class="fa fa-search fa-lg"></i>
+</button>
+</div>
+<!-- Modal -->
+<div id="searchModal" class="modal search_products fade" role="dialog">
+	<div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="content_search">
+				<form id="form_search_top" action="/shop/search" method="get">
+					<div class="search">
+						<input name="keyword" id="mod_virtuemart_search" maxlength="20" class="inputbox search_top" type="text" size="20" placeholder="Search..." />					</div>
+					<input type="hidden" name="limitstart" value="0" />
+					<input type="hidden" name="option" value="com_virtuemart" />
+					<input type="hidden" name="view" value="category" />
+					<input type="hidden" name="virtuemart_category_id" value="0"/>
+					
+				</form>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div></div></div></div></div></div></div></header><section id="sp-page-title"><div class="row"><div id="sp-title" class="col-sm-12 col-md-12"><div class="sp-column "><div class="sp-page-title"style="background-image: url({% static '/cakeart/images/bg_header.jpg' %});"><div class="container"><h1>Shop</h1></div></div></div></div></div></section><section id="sp-main-body"><div class="container"><div class="row"><div id="sp-left" class="col-sm-4 col-md-3"><div class="sp-column custom-class"><div class="sp-module left_shop"><div class="sp-module-content"><!--BEGIN Search Box -->
+
+	<form action="/shop/search" method="get">
+		<div class="searchleft_shop">
+			<input name="keyword" id="mod_virtuemart_search" maxlength="20" alt="Search" class="inputboxleft_shop" type="text" size="20" value="Search product"  onblur="if(this.value=='') this.value='Search product';" onfocus="if(this.value=='Search product') this.value='';" /><button class="button btn btn-primary" onclick="this.form.searchword.focus();"><i class="fa fa-search"></i></button>		</div>
+		<input type="hidden" name="limitstart" value="0" />
+		<input type="hidden" name="option" value="com_virtuemart" />
+		<input type="hidden" name="view" value="category" />
+		<input type="hidden" name="virtuemart_category_id" value="0"/>
+		
+	</form>
+</div></div><div class="sp-module "><h3 class="sp-module-title">Product Categories</h3><div class="sp-module-content">
+
+
+<ul class="VMmenu" id="VMmenu89_18064" >
+
+
+
+
+<li class="VmClose">
+
+	<!--
+
+	<div class="thumb"><img src="/images/stories/virtuemart/category/" alt=""></div>
+
+	-->
+
+	<div class="name apple">
+
+		<a href="{% static '/cakeart/shop/apple' %}" >Apple</a>
+	</div>
+
+
+</li>
+
+
+
+
+<li class="VmClose">
+
+	<!--
+
+	<div class="thumb"><img src="/images/stories/virtuemart/category/" alt=""></div>
+
+	-->
+
+	<div class="name celebration">
+
+		<a href="{% static '/cakeart/shop/celebration' %}" >Celebration</a>
+	</div>
+
+
+</li>
+
+
+
+
+<li class="VmClose">
+
+	<!--
+
+	<div class="thumb"><img src="/images/stories/virtuemart/category/" alt=""></div>
+
+	-->
+
+	<div class="name chocolate">
+
+		<a href="{% static '/cakeart/shop/chocolate' %}" >Chocolate</a>
+	</div>
+
+
+</li>
+
+
+
+
+<li class="VmClose">
+
+	<!--
+
+	<div class="thumb"><img src="/images/stories/virtuemart/category/" alt=""></div>
+
+	-->
+
+	<div class="name cupcake">
+
+		<a href="{% static '/cakeart/shop/cupcake' %}" >Cupcake</a>
+	</div>
+
+
+</li>
+
+
+
+
+<li class="VmClose">
+
+	<!--
+
+	<div class="thumb"><img src="/images/stories/virtuemart/category/" alt=""></div>
+
+	-->
+
+	<div class="name desserts">
+
+		<a href="{% static '/cakeart/shop/desserts' %}" >Desserts</a>
+	</div>
+
+
+</li>
+
+
+</ul>
+
+</div></div><div class="sp-module "><h3 class="sp-module-title">Filter by price</h3><div class="sp-module-content">
+
+	<script>
+	jQuery(function(){
+		jQuery("#Slider1").slider({
+		from: parseInt(3),
+		to: parseInt(20),
+		step: 1,
+		smooth: true, round: 0, dimension: "$", skin: "plastic" });
+	});
+	</script>
+
+<!--BEGIN Search Box -->
+<div class="mod_obfilter">
+	<form action="/shop/search" method="get">
+		<input id="Slider1" type="slider" name="price_arrange_obvm" value="3;20" />
+		<button type="submit" class="button">Filter</button>
+		<input type="hidden" name="limitstart" value="0" />
+		<input type="hidden" name="option" value="com_virtuemart" />
+		<input type="hidden" name="view" value="category" />
+		<input type="hidden" name="custom_parent_id" value="1" />
+		<input type="hidden" name="search_type" value="price" />
+		<input type="hidden" name="search_order" value="bf" />
+		<input type="hidden" name="search_date" value="2020-01-03 10:28:09" />
+		<input type="hidden" name="virtuemart_category_id" value="0"/>
+		
+	</form>
+	<!-- End Search Box -->
+</div>
+</div></div><div class="sp-module "><h3 class="sp-module-title">Top sale products</h3><div class="sp-module-content"><div class="vmgroup list_products topSales">
+										<div class="product item">
+			<div class="wrap">
+				<div class="feature-image">
+					<div class="icon">
+						<a class="various1" href="#inline_sales23"><i class="fa fa-search"></i></a>
+					</div>
+					<img src="{% static '/cakeart/images/stories/virtuemart/product/resized/tiramisu-12_350x235.jpg' %}" alt="tiramisu-12" class="featuredProductImage" border="0" />				</div>
+				<div class="stats">
+					<div class="title-product">
+						<a href="{% static '/cakeart/shop/chocolate/sirloin-cake-detail' %}" >Tiramisu</a>					</div>
+					<div class="product-price">
+						<div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+							<p class="price">
+
+			<ins><span class="amount">$18</span></ins>
+	</p>
+
+							<meta itemprop="price" content="0">
+							<meta itemprop="priceCurrency" content="">
+							<link itemprop="availability" href="http://schema.org/InStock">
+						</div>
+					</div>
+					<div class="product-options">
+													<span class="vmicon vm2-nostock" title="Sorry, we currently have no stock for this item"></span>
+						<div class="star-rating">		<div class="ratingbox dummy" title="Not Rated Yet" >
+
+		</div>
+	</div>					</div>
+				</div>
+				<!-- Modal -->
+				<div style="display: none;">
+					<div id="inline_sales23">
+						<div class="modal-body">
+							<div class="content_pop ob_lightbox_shop">
+	<div class="row">
+		<div class="col-md-6">
+			<div id="myCarouselpop23" class="carousel slide" data-ride="carousel">
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+										<div class="item active">
+						<img src="{% static '/cakeart/images/stories/virtuemart/product/tiramisu-12.jpg' %}" alt="">
+					</div>
+									</div>
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarouselpop23" role="button" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+				</a>
+				<a class="right carousel-control" href="#myCarouselpop23" role="button" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+				</a>
+
+			</div>
+		</div>
+		<div class="col-md-6">
+			<h3 class="product_title entry-title">Tiramisu</h3>
+			<div class="product_meta">
+				<span class="sku">SKU: VL1</span>
+				<span class="cats">Categories:
+					<a href="{% static '/cakeart/shop/chocolate' %}" rel="tag">Chocolate</a>, <a href="{% static '/cakeart/shop/cupcake' %}" rel="tag">Cupcake</a>, <a href="{% static '/cakeart/shop/desserts' %}" rel="tag">Desserts</a>				</span>
+			</div>
+			<div itemscope="" itemtype="http://schema.org/Offer">
+
+				<p class="price">
+
+			<ins><span class="amount">$18</span></ins>
+	</p>
+
+
+				<meta itemprop="price" content="0">
+				<meta itemprop="priceCurrency" content="">
+				<link itemprop="availability" href="http://schema.org/InStock">
+
+			</div>
+			<div class="star-rating">
+						<div class="ratingbox dummy" title="Not Rated Yet" >
+
+		</div>
+				</div>
+				<div class="addtocart-area is_qty">
+		<form method="post" class="product js-recalculate" action="/shop">
+			<div class="vm-customfields-wrap">
+							</div>			
+				
+	<div class="addtocart-bar">
+								<!-- <label for="quantity23" class="quantity_box">Quantity: </label> -->
+				<span class="quantity-box">
+				<input type="number" class="quantity-input js-recalculate" name="quantity[]"
+					data-errStr="You can buy this product only in multiples of %s pieces!" step="1"
+					value="1"  />
+			</span>
+
+			<span class="addtocart-button">
+				<input type="submit" name="addtocart" class="addtocart-button" value="Add to Cart" title="Add to Cart" />				</span> 			<input type="hidden" name="virtuemart_product_id[]" value="23"/>
+			<noscript><input type="hidden" name="task" value="add"/></noscript> 
+	</div>			<input type="hidden" name="option" value="com_virtuemart"/>
+			<input type="hidden" name="view" value="cart"/>
+			<input type="hidden" name="virtuemart_product_id[]" value="23"/>
+			<input type="hidden" name="pname" value="Tiramisu"/>
+			<input type="hidden" name="pid" value="23"/>
+			<input type="hidden" name="Itemid" value="530"/>		</form>
+
+	</div>
+
+			<div class="description">
+				<p>Lorem ipsum dolor sit amet, consectetuer adipisc in elit, sed diam non ummy nibh in euismod tincidunt ut liber tempor laoreet. Nullam viverra orci id lectus aliquam luctus. Aliquam elementum gravida lacus non accumsan. Nullam ultrices purus ac porta tincidunt. Nullam vel scelerisque dui, posuere pulvinar arcu.</p>
+			</div>
+						<div class="clear"></div>
+		</div>
+		<a href="{% static '/cakeart/shop/chocolate/sirloin-cake-detail' %}" target="_top" class="quick-view-detail">View detail</a>
+	</div>
+</div>						</div>
+					</div>
+				</div>
+				<div id="productModal23" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-body">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<div class="content_pop ob_lightbox_shop">
+	<div class="row">
+		<div class="col-md-6">
+			<div id="myCarouselpop23" class="carousel slide" data-ride="carousel">
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+										<div class="item active">
+						<img src="{% static '/cakeart/images/stories/virtuemart/product/tiramisu-12.jpg' %}" alt="">
+					</div>
+									</div>
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarouselpop23" role="button" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+				</a>
+				<a class="right carousel-control" href="#myCarouselpop23" role="button" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+				</a>
+
+			</div>
+		</div>
+		<div class="col-md-6">
+			<h3 class="product_title entry-title">Tiramisu</h3>
+			<div class="product_meta">
+				<span class="sku">SKU: VL1</span>
+				<span class="cats">Categories:
+					<a href="{% static '/cakeart/shop/chocolate' %}" rel="tag">Chocolate</a>, <a href="{% static '/cakeart/shop/cupcake' %}" rel="tag">Cupcake</a>, <a href="{% static '/cakeart/shop/desserts' %}" rel="tag">Desserts</a>				</span>
+			</div>
+			<div itemscope="" itemtype="http://schema.org/Offer">
+
+				<p class="price">
+
+			<ins><span class="amount">$18</span></ins>
+	</p>
+
+
+				<meta itemprop="price" content="0">
+				<meta itemprop="priceCurrency" content="">
+				<link itemprop="availability" href="http://schema.org/InStock">
+
+			</div>
+			<div class="star-rating">
+						<div class="ratingbox dummy" title="Not Rated Yet" >
+
+		</div>
+				</div>
+				<div class="addtocart-area is_qty">
+		<form method="post" class="product js-recalculate" action="/shop">
+			<div class="vm-customfields-wrap">
+							</div>			
+				
+	<div class="addtocart-bar">
+								<!-- <label for="quantity23" class="quantity_box">Quantity: </label> -->
+				<span class="quantity-box">
+				<input type="number" class="quantity-input js-recalculate" name="quantity[]"
+					data-errStr="You can buy this product only in multiples of %s pieces!" step="1"
+					value="1"  />
+			</span>
+
+			<span class="addtocart-button">
+				<input type="submit" name="addtocart" class="addtocart-button" value="Add to Cart" title="Add to Cart" />				</span> 			<input type="hidden" name="virtuemart_product_id[]" value="23"/>
+			<noscript><input type="hidden" name="task" value="add"/></noscript> 
+	</div>			<input type="hidden" name="option" value="com_virtuemart"/>
+			<input type="hidden" name="view" value="cart"/>
+			<input type="hidden" name="virtuemart_product_id[]" value="23"/>
+			<input type="hidden" name="pname" value="Tiramisu"/>
+			<input type="hidden" name="pid" value="23"/>
+			<input type="hidden" name="Itemid" value="530"/>		</form>
+
+	</div>
+
+			<div class="description">
+				<p>Lorem ipsum dolor sit amet, consectetuer adipisc in elit, sed diam non ummy nibh in euismod tincidunt ut liber tempor laoreet. Nullam viverra orci id lectus aliquam luctus. Aliquam elementum gravida lacus non accumsan. Nullam ultrices purus ac porta tincidunt. Nullam vel scelerisque dui, posuere pulvinar arcu.</p>
+			</div>
+						<div class="clear"></div>
+		</div>
+		<a href="{% static '/cakeart/shop/chocolate/sirloin-cake-detail' %}" target="_top" class="quick-view-detail">View detail</a>
+	</div>
+</div>							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+									<div class="product item">
+			<div class="wrap">
+				<div class="feature-image">
+					<div class="icon">
+						<a class="various1" href="#inline_sales22"><i class="fa fa-search"></i></a>
+					</div>
+					<img src="{% static '/cakeart/images/stories/virtuemart/product/resized/Tartufo-600x500_350x235.jpg' %}" alt="Tartufo-600x500" class="featuredProductImage" border="0" />				</div>
+				<div class="stats">
+					<div class="title-product">
+						<a href="{% static '/cakeart/shop/celebration/cheese-burger-detail' %}" >Tartufo di Pizzo</a>					</div>
+					<div class="product-price">
+						<div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+							<p class="price">
+
+			<ins><span class="amount">$15</span></ins>
+	</p>
+
+							<meta itemprop="price" content="0">
+							<meta itemprop="priceCurrency" content="">
+							<link itemprop="availability" href="http://schema.org/InStock">
+						</div>
+					</div>
+					<div class="product-options">
+													<span class="vmicon vm2-nostock" title="Sorry, we currently have no stock for this item"></span>
+						<div class="star-rating">		<div class="ratingbox dummy" title="Not Rated Yet" >
+
+		</div>
+	</div>					</div>
+				</div>
+				<!-- Modal -->
+				<div style="display: none;">
+					<div id="inline_sales22">
+						<div class="modal-body">
+							<div class="content_pop ob_lightbox_shop">
+	<div class="row">
+		<div class="col-md-6">
+			<div id="myCarouselpop22" class="carousel slide" data-ride="carousel">
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+										<div class="item active">
+						<img src="{% static '/cakeart/images/stories/virtuemart/product/Tartufo-600x500.jpg' %}" alt="">
+					</div>
+									</div>
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarouselpop22" role="button" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+				</a>
+				<a class="right carousel-control" href="#myCarouselpop22" role="button" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+				</a>
+
+			</div>
+		</div>
+		<div class="col-md-6">
+			<h3 class="product_title entry-title">Tartufo di Pizzo</h3>
+			<div class="product_meta">
+				<span class="sku">SKU: HA4554</span>
+				<span class="cats">Categories:
+					<a href="{% static '/cakeart/shop/celebration' %}" rel="tag">Celebration</a>, <a href="{% static '/cakeart/shop/chocolate' %}" rel="tag">Chocolate</a>, <a href="{% static '/cakeart/shop/cupcake' %}" rel="tag">Cupcake</a>				</span>
+			</div>
+			<div itemscope="" itemtype="http://schema.org/Offer">
+
+				<p class="price">
+
+			<ins><span class="amount">$15</span></ins>
+	</p>
+
+
+				<meta itemprop="price" content="0">
+				<meta itemprop="priceCurrency" content="">
+				<link itemprop="availability" href="http://schema.org/InStock">
+
+			</div>
+			<div class="star-rating">
+						<div class="ratingbox dummy" title="Not Rated Yet" >
+
+		</div>
+				</div>
+				<div class="addtocart-area is_qty">
+		<form method="post" class="product js-recalculate" action="/shop">
+			<div class="vm-customfields-wrap">
+							</div>			
+				
+	<div class="addtocart-bar">
+								<!-- <label for="quantity22" class="quantity_box">Quantity: </label> -->
+				<span class="quantity-box">
+				<input type="number" class="quantity-input js-recalculate" name="quantity[]"
+					data-errStr="You can buy this product only in multiples of %s pieces!" step="1"
+					value="1"  />
+			</span>
+
+			<span class="addtocart-button">
+				<input type="submit" name="addtocart" class="addtocart-button" value="Add to Cart" title="Add to Cart" />				</span> 			<input type="hidden" name="virtuemart_product_id[]" value="22"/>
+			<noscript><input type="hidden" name="task" value="add"/></noscript> 
+	</div>			<input type="hidden" name="option" value="com_virtuemart"/>
+			<input type="hidden" name="view" value="cart"/>
+			<input type="hidden" name="virtuemart_product_id[]" value="22"/>
+			<input type="hidden" name="pname" value="Tartufo di Pizzo"/>
+			<input type="hidden" name="pid" value="22"/>
+			<input type="hidden" name="Itemid" value="530"/>		</form>
+
+	</div>
+
+			<div class="description">
+				<p>Lorem ipsum dolor sit amet, consectetuer adipisc in elit, sed diam non ummy nibh in euismod tincidunt ut liber tempor laoreet. Nullam viverra orci id lectus aliquam luctus. Aliquam elementum gravida lacus non accumsan. Nullam ultrices purus ac porta tincidunt. Nullam vel scelerisque dui, posuere pulvinar arcu.</p>
+			</div>
+						<div class="clear"></div>
+		</div>
+		<a href="{% static '/cakeart/shop/celebration/cheese-burger-detail' %}" target="_top" class="quick-view-detail">View detail</a>
+	</div>
+</div>						</div>
+					</div>
+				</div>
+				<div id="productModal22" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-body">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<div class="content_pop ob_lightbox_shop">
+	<div class="row">
+		<div class="col-md-6">
+			<div id="myCarouselpop22" class="carousel slide" data-ride="carousel">
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+										<div class="item active">
+						<img src="{% static '/cakeart/images/stories/virtuemart/product/Tartufo-600x500.jpg' %}" alt="">
+					</div>
+									</div>
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarouselpop22" role="button" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+				</a>
+				<a class="right carousel-control" href="#myCarouselpop22" role="button" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+				</a>
+
+			</div>
+		</div>
+		<div class="col-md-6">
+			<h3 class="product_title entry-title">Tartufo di Pizzo</h3>
+			<div class="product_meta">
+				<span class="sku">SKU: HA4554</span>
+				<span class="cats">Categories:
+					<a href="{% static '/cakeart/shop/celebration' %}" rel="tag">Celebration</a>, <a href="{% static '/cakeart/shop/chocolate' %}" rel="tag">Chocolate</a>, <a href="{% static '/cakeart/shop/cupcake' %}" rel="tag">Cupcake</a>				</span>
+			</div>
+			<div itemscope="" itemtype="http://schema.org/Offer">
+
+				<p class="price">
+
+			<ins><span class="amount">$15</span></ins>
+	</p>
+
+
+				<meta itemprop="price" content="0">
+				<meta itemprop="priceCurrency" content="">
+				<link itemprop="availability" href="http://schema.org/InStock">
+
+			</div>
+			<div class="star-rating">
+						<div class="ratingbox dummy" title="Not Rated Yet" >
+
+		</div>
+				</div>
+				<div class="addtocart-area is_qty">
+		<form method="post" class="product js-recalculate" action="/shop">
+			<div class="vm-customfields-wrap">
+							</div>			
+				
+	<div class="addtocart-bar">
+								<!-- <label for="quantity22" class="quantity_box">Quantity: </label> -->
+				<span class="quantity-box">
+				<input type="number" class="quantity-input js-recalculate" name="quantity[]"
+					data-errStr="You can buy this product only in multiples of %s pieces!" step="1"
+					value="1"  />
+			</span>
+
+			<span class="addtocart-button">
+				<input type="submit" name="addtocart" class="addtocart-button" value="Add to Cart" title="Add to Cart" />				</span> 			<input type="hidden" name="virtuemart_product_id[]" value="22"/>
+			<noscript><input type="hidden" name="task" value="add"/></noscript> 
+	</div>			<input type="hidden" name="option" value="com_virtuemart"/>
+			<input type="hidden" name="view" value="cart"/>
+			<input type="hidden" name="virtuemart_product_id[]" value="22"/>
+			<input type="hidden" name="pname" value="Tartufo di Pizzo"/>
+			<input type="hidden" name="pid" value="22"/>
+			<input type="hidden" name="Itemid" value="530"/>		</form>
+
+	</div>
+
+			<div class="description">
+				<p>Lorem ipsum dolor sit amet, consectetuer adipisc in elit, sed diam non ummy nibh in euismod tincidunt ut liber tempor laoreet. Nullam viverra orci id lectus aliquam luctus. Aliquam elementum gravida lacus non accumsan. Nullam ultrices purus ac porta tincidunt. Nullam vel scelerisque dui, posuere pulvinar arcu.</p>
+			</div>
+						<div class="clear"></div>
+		</div>
+		<a href="{% static '/cakeart/shop/celebration/cheese-burger-detail' %}" target="_top" class="quick-view-detail">View detail</a>
+	</div>
+</div>							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+									<div class="product item">
+			<div class="wrap">
+				<div class="feature-image">
+					<div class="icon">
+						<a class="various1" href="#inline_sales21"><i class="fa fa-search"></i></a>
+					</div>
+					<img src="{% static '/cakeart/images/stories/virtuemart/product/resized/Strawberry-Cupcake-600x600_350x235.jpg' %}" alt="Strawberry-Cupcake-600x600" class="featuredProductImage" border="0" />				</div>
+				<div class="stats">
+					<div class="title-product">
+						<a href="{% static '/cakeart/shop/celebration/brith-cake-detail' %}" >Strawberry Cupcakes</a>					</div>
+					<div class="product-price">
+						<div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+							<p class="price">
+
+			<ins><span class="amount">$11</span></ins>
+	</p>
+
+							<meta itemprop="price" content="0">
+							<meta itemprop="priceCurrency" content="">
+							<link itemprop="availability" href="http://schema.org/InStock">
+						</div>
+					</div>
+					<div class="product-options">
+													<span class="vmicon vm2-nostock" title="Sorry, we currently have no stock for this item"></span>
+						<div class="star-rating">		<div class="ratingbox dummy" title="Not Rated Yet" >
+
+		</div>
+	</div>					</div>
+				</div>
+				<!-- Modal -->
+				<div style="display: none;">
+					<div id="inline_sales21">
+						<div class="modal-body">
+							<div class="content_pop ob_lightbox_shop">
+	<div class="row">
+		<div class="col-md-6">
+			<div id="myCarouselpop21" class="carousel slide" data-ride="carousel">
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+										<div class="item active">
+						<img src="{% static '/cakeart/images/stories/virtuemart/product/Strawberry-Cupcake-600x600.jpg' %}" alt="">
+					</div>
+									</div>
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarouselpop21" role="button" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+				</a>
+				<a class="right carousel-control" href="#myCarouselpop21" role="button" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+				</a>
+
+			</div>
+		</div>
+		<div class="col-md-6">
+			<h3 class="product_title entry-title">Strawberry Cupcakes</h3>
+			<div class="product_meta">
+				<span class="sku">SKU: SN56</span>
+				<span class="cats">Categories:
+					<a href="/shop/celebration" rel="tag">Celebration</a>, <a href="/shop/chocolate" rel="tag">Chocolate</a>, <a href="/shop/cupcake" rel="tag">Cupcake</a>				</span>
+			</div>
+			<div itemscope="" itemtype="http://schema.org/Offer">
+
+				<p class="price">
+
+			<ins><span class="amount">$11</span></ins>
+	</p>
+
+
+				<meta itemprop="price" content="0">
+				<meta itemprop="priceCurrency" content="">
+				<link itemprop="availability" href="http://schema.org/InStock">
+
+			</div>
+			<div class="star-rating">
+						<div class="ratingbox dummy" title="Not Rated Yet" >
+
+		</div>
+				</div>
+				<div class="addtocart-area is_qty">
+		<form method="post" class="product js-recalculate" action="/shop">
+			<div class="vm-customfields-wrap">
+							</div>			
+				
+	<div class="addtocart-bar">
+								<!-- <label for="quantity21" class="quantity_box">Quantity: </label> -->
+				<span class="quantity-box">
+				<input type="number" class="quantity-input js-recalculate" name="quantity[]"
+					data-errStr="You can buy this product only in multiples of %s pieces!" step="1"
+					value="1"  />
+			</span>
+
+			<span class="addtocart-button">
+				<input type="submit" name="addtocart" class="addtocart-button" value="Add to Cart" title="Add to Cart" />				</span> 			<input type="hidden" name="virtuemart_product_id[]" value="21"/>
+			<noscript><input type="hidden" name="task" value="add"/></noscript> 
+	</div>			<input type="hidden" name="option" value="com_virtuemart"/>
+			<input type="hidden" name="view" value="cart"/>
+			<input type="hidden" name="virtuemart_product_id[]" value="21"/>
+			<input type="hidden" name="pname" value="Strawberry Cupcakes"/>
+			<input type="hidden" name="pid" value="21"/>
+			<input type="hidden" name="Itemid" value="530"/>		</form>
+
+	</div>
+
+			<div class="description">
+				<p>Lorem ipsum dolor sit amet, consectetuer adipisc in elit, sed diam non ummy nibh in euismod tincidunt ut liber tempor laoreet. Nullam viverra orci id lectus aliquam luctus. Aliquam elementum gravida lacus non accumsan. Nullam ultrices purus ac porta tincidunt. Nullam vel scelerisque dui, posuere pulvinar arcu.</p>
+			</div>
+						<div class="clear"></div>
+		</div>
+		<a href="{% static '/cakeart/shop/celebration/brith-cake-detail' %}" target="_top" class="quick-view-detail">View detail</a>
+	</div>
+</div>						</div>
+					</div>
+				</div>
+				<div id="productModal21" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-body">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<div class="content_pop ob_lightbox_shop">
+	<div class="row">
+		<div class="col-md-6">
+			<div id="myCarouselpop21" class="carousel slide" data-ride="carousel">
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+										<div class="item active">
+						<img src="{% static '/cakeart/images/stories/virtuemart/product/Strawberry-Cupcake-600x600.jpg' %}" alt="">
+					</div>
+									</div>
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarouselpop21" role="button" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+				</a>
+				<a class="right carousel-control" href="#myCarouselpop21" role="button" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+				</a>
+
+			</div>
+		</div>
+		<div class="col-md-6">
+			<h3 class="product_title entry-title">Strawberry Cupcakes</h3>
+			<div class="product_meta">
+				<span class="sku">SKU: SN56</span>
+				<span class="cats">Categories:
+					<a href="{% static '/cakeart/shop/celebration' %}" rel="tag">Celebration</a>, <a href="{% static '/cakeart/shop/chocolate' %}" rel="tag">Chocolate</a>, <a href="{% static '/cakeart/shop/cupcake' %}" rel="tag">Cupcake</a>				</span>
+			</div>
+			<div itemscope="" itemtype="http://schema.org/Offer">
+
+				<p class="price">
+
+			<ins><span class="amount">$11</span></ins>
+	</p>
+
+
+				<meta itemprop="price" content="0">
+				<meta itemprop="priceCurrency" content="">
+				<link itemprop="availability" href="http://schema.org/InStock">
+
+			</div>
+			<div class="star-rating">
+						<div class="ratingbox dummy" title="Not Rated Yet" >
+
+		</div>
+				</div>
+				<div class="addtocart-area is_qty">
+		<form method="post" class="product js-recalculate" action="/shop">
+			<div class="vm-customfields-wrap">
+							</div>			
+				
+	<div class="addtocart-bar">
+								<!-- <label for="quantity21" class="quantity_box">Quantity: </label> -->
+				<span class="quantity-box">
+				<input type="number" class="quantity-input js-recalculate" name="quantity[]"
+					data-errStr="You can buy this product only in multiples of %s pieces!" step="1"
+					value="1"  />
+			</span>
+
+			<span class="addtocart-button">
+				<input type="submit" name="addtocart" class="addtocart-button" value="Add to Cart" title="Add to Cart" />				</span> 			<input type="hidden" name="virtuemart_product_id[]" value="21"/>
+			<noscript><input type="hidden" name="task" value="add"/></noscript> 
+	</div>			<input type="hidden" name="option" value="com_virtuemart"/>
+			<input type="hidden" name="view" value="cart"/>
+			<input type="hidden" name="virtuemart_product_id[]" value="21"/>
+			<input type="hidden" name="pname" value="Strawberry Cupcakes"/>
+			<input type="hidden" name="pid" value="21"/>
+			<input type="hidden" name="Itemid" value="530"/>		</form>
+
+	</div>
+
+			<div class="description">
+				<p>Lorem ipsum dolor sit amet, consectetuer adipisc in elit, sed diam non ummy nibh in euismod tincidunt ut liber tempor laoreet. Nullam viverra orci id lectus aliquam luctus. Aliquam elementum gravida lacus non accumsan. Nullam ultrices purus ac porta tincidunt. Nullam vel scelerisque dui, posuere pulvinar arcu.</p>
+			</div>
+						<div class="clear"></div>
+		</div>
+		<a href="{% static '/cakeart/shop/celebration/brith-cake-detail' %}" target="_top" class="quick-view-detail">View detail</a>
+	</div>
+</div>							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+							
+
+</div>
+<script id="ready.vmprices_js" type="text/javascript">//<![CDATA[ 
+jQuery(document).ready(function($) {
+
+		Virtuemart.product($("form.product"));
+}); //]]>
+</script>
+</div></div></div></div><div id="sp-component" class="col-sm-9 col-md-9"><div class="sp-column "><div id="system-message-container">
+	</div>
+<div class="edit_address">
+
+
+<form method="post" id="userForm" name="userForm" class="form-validate" action="/shop/user" >
+	<h2>Add/Edit billing address information	</h2>
+
+	<!--<form method="post" id="userForm" name="userForm" action="/shop" class="form-validate">-->
+		<div class="row">
+<fieldset class="col-md-6">
+
+
+
+			<table class="adminForm user-details">
+
+						<tr title="E-Mail">
+					<td class="key"  >
+						<label class="email" for="email_field">
+							E-Mail <span class="asterisk">*</span>						</label>
+					</td>
+					<td>
+						<input type="text" id="email_field" name="email" size="30" value=""  class="required" maxlength="100" /> 					</td>
+				</tr>
+					<tr title="Username">
+					<td class="key"  >
+						<label class="username" for="username_field">
+							Username						</label>
+					</td>
+					<td>
+						<input type="text" id="username_field" name="username" size="30" value=""  maxlength="25" /> 					</td>
+				</tr>
+					<tr title="Displayed Name">
+					<td class="key"  >
+						<label class="name" for="name_field">
+							Displayed Name						</label>
+					</td>
+					<td>
+						<input type="text" id="name_field" name="name" size="30" value=""  maxlength="25" /> 					</td>
+				</tr>
+					<tr title="Password">
+					<td class="key"  >
+						<label class="password" for="password_field">
+							Password						</label>
+					</td>
+					<td>
+						<input type="password" id="password_field" name="password"  size="30" class="validate-password  inputbox" />
+					</td>
+				</tr>
+					<tr title="Confirm Password">
+					<td class="key"  >
+						<label class="password2" for="password2_field">
+							Confirm Password						</label>
+					</td>
+					<td>
+						<input type="password" id="password2_field" name="password2"  size="30" class="validate-password  inputbox" />
+					</td>
+				</tr>
+				<fieldset>
+			<span class="userfields_info">Shopper Information</span>
+
+						</table>
+		</fieldset>
+					<fieldset>
+			<span class="userfields_info">Bill To</span>
+
+			
+			<table class="adminForm user-details">
+
+						<tr title="Company Name">
+					<td class="key"  >
+						<label class="company" for="company_field">
+							Company Name						</label>
+					</td>
+					<td>
+						<input type="text" id="company_field" name="company" size="30" value=""  maxlength="64" /> 					</td>
+				</tr>
+					<tr title="Title">
+					<td class="key"  >
+						<label class="title" for="title_field">
+							Title						</label>
+					</td>
+					<td>
+						<select id="title" name="title" class=" vm-chzn-select" style="width: 210px">
+	<option value="" selected="selected">-- Select --</option>
+	<option value="Mr">Mr</option>
+	<option value="Mrs">Mrs</option>
+</select>
+					</td>
+				</tr>
+					<tr title="First Name">
+					<td class="key"  >
+						<label class="first_name" for="first_name_field">
+							First Name <span class="asterisk">*</span>						</label>
+					</td>
+					<td>
+						<input type="text" id="first_name_field" name="first_name" size="30" value=""  class="required" maxlength="32" /> 					</td>
+				</tr>
+					<tr title="Middle Name">
+					<td class="key"  >
+						<label class="middle_name" for="middle_name_field">
+							Middle Name						</label>
+					</td>
+					<td>
+						<input type="text" id="middle_name_field" name="middle_name" size="30" value=""  maxlength="32" /> 					</td>
+				</tr>
+					<tr title="Last Name">
+					<td class="key"  >
+						<label class="last_name" for="last_name_field">
+							Last Name <span class="asterisk">*</span>						</label>
+					</td>
+					<td>
+						<input type="text" id="last_name_field" name="last_name" size="30" value=""  class="required" maxlength="32" /> 					</td>
+				</tr>
+					<tr title="Address 1">
+					<td class="key"  >
+						<label class="address_1" for="address_1_field">
+							Address 1 <span class="asterisk">*</span>						</label>
+					</td>
+					<td>
+						<input type="text" id="address_1_field" name="address_1" size="30" value=""  class="required" maxlength="64" /> 					</td>
+				</tr>
+					<tr title="Address 2">
+					<td class="key"  >
+						<label class="address_2" for="address_2_field">
+							Address 2						</label>
+					</td>
+					<td>
+						<input type="text" id="address_2_field" name="address_2" size="30" value=""  maxlength="64" /> 					</td>
+				</tr>
+					<tr title="Zip / Postal Code">
+					<td class="key"  >
+						<label class="zip" for="zip_field">
+							Zip / Postal Code <span class="asterisk">*</span>						</label>
+					</td>
+					<td>
+						<input type="text" id="zip_field" name="zip" size="30" value=""  class="required" maxlength="32" /> 					</td>
+				</tr>
+					<tr title="City">
+					<td class="key"  >
+						<label class="city" for="city_field">
+							City <span class="asterisk">*</span>						</label>
+					</td>
+					<td>
+						<input type="text" id="city_field" name="city" size="30" value=""  class="required" maxlength="32" /> 					</td>
+				</tr>
+					<tr title="Country">
+					<td class="key"  >
+						<label class="virtuemart_country_id" for="virtuemart_country_id_field">
+							Country <span class="asterisk">*</span>						</label>
+					</td>
+					<td>
+						<select id="virtuemart_country_id_field" name="virtuemart_country_id" class="vm-chzn-select required" style="width: 210px">
+	<option value="" selected="selected">-- Select --</option>
+	<option value="1">Afghanistan</option>
+	<option value="2">Albania</option>
+	<option value="3">Algeria</option>
+	<option value="4">American Samoa</option>
+	<option value="5">Andorra</option>
+	<option value="6">Angola</option>
+	<option value="7">Anguilla</option>
+	<option value="8">Antarctica</option>
+	<option value="9">Antigua and Barbuda</option>
+	<option value="10">Argentina</option>
+	<option value="11">Armenia</option>
+	<option value="12">Aruba</option>
+	<option value="13">Australia</option>
+	<option value="14">Austria</option>
+	<option value="15">Azerbaijan</option>
+	<option value="16">Bahamas</option>
+	<option value="17">Bahrain</option>
+	<option value="18">Bangladesh</option>
+	<option value="19">Barbados</option>
+	<option value="20">Belarus</option>
+	<option value="21">Belgium</option>
+	<option value="22">Belize</option>
+	<option value="23">Benin</option>
+	<option value="24">Bermuda</option>
+	<option value="25">Bhutan</option>
+	<option value="26">Bolivia</option>
+	<option value="27">Bosnia and Herzegovina</option>
+	<option value="28">Botswana</option>
+	<option value="29">Bouvet Island</option>
+	<option value="30">Brazil</option>
+	<option value="31">British Indian Ocean Territory</option>
+	<option value="32">Brunei Darussalam</option>
+	<option value="33">Bulgaria</option>
+	<option value="34">Burkina Faso</option>
+	<option value="35">Burundi</option>
+	<option value="36">Cambodia</option>
+	<option value="37">Cameroon</option>
+	<option value="38">Canada</option>
+	<option value="244">Canary Islands</option>
+	<option value="39">Cape Verde</option>
+	<option value="40">Cayman Islands</option>
+	<option value="41">Central African Republic</option>
+	<option value="42">Chad</option>
+	<option value="43">Chile</option>
+	<option value="44">China</option>
+	<option value="45">Christmas Island</option>
+	<option value="46">Cocos (Keeling) Islands</option>
+	<option value="47">Colombia</option>
+	<option value="48">Comoros</option>
+	<option value="49">Congo, Republic of the</option>
+	<option value="50">Cook Islands</option>
+	<option value="51">Costa Rica</option>
+	<option value="53">Croatia</option>
+	<option value="54">Cuba</option>
+	<option value="55">Cyprus</option>
+	<option value="56">Czech Republic</option>
+	<option value="52">C&ocirc;te d'Ivoire</option>
+	<option value="57">Denmark</option>
+	<option value="58">Djibouti</option>
+	<option value="59">Dominica</option>
+	<option value="60">Dominican Republic</option>
+	<option value="62">Ecuador</option>
+	<option value="63">Egypt</option>
+	<option value="64">El Salvador</option>
+	<option value="65">Equatorial Guinea</option>
+	<option value="66">Eritrea</option>
+	<option value="67">Estonia</option>
+	<option value="68">Ethiopia</option>
+	<option value="69">Falkland Islands (Malvinas)</option>
+	<option value="70">Faroe Islands</option>
+	<option value="71">Fiji</option>
+	<option value="72">Finland</option>
+	<option value="73">France</option>
+	<option value="75">French Guiana</option>
+	<option value="76">French Polynesia</option>
+	<option value="77">French Southern Territories</option>
+	<option value="78">Gabon</option>
+	<option value="79">Gambia</option>
+	<option value="80">Georgia</option>
+	<option value="81">Germany</option>
+	<option value="82">Ghana</option>
+	<option value="83">Gibraltar</option>
+	<option value="84">Greece</option>
+	<option value="85">Greenland</option>
+	<option value="86">Grenada</option>
+	<option value="87">Guadeloupe</option>
+	<option value="88">Guam</option>
+	<option value="89">Guatemala</option>
+	<option value="90">Guinea</option>
+	<option value="91">Guinea-Bissau</option>
+	<option value="92">Guyana</option>
+	<option value="93">Haiti</option>
+	<option value="94">Heard and McDonald Islands</option>
+	<option value="95">Honduras</option>
+	<option value="96">Hong Kong</option>
+	<option value="97">Hungary</option>
+	<option value="98">Iceland</option>
+	<option value="99">India</option>
+	<option value="100">Indonesia</option>
+	<option value="101">Iran, Islamic Republic of</option>
+	<option value="102">Iraq</option>
+	<option value="103">Ireland</option>
+	<option value="104">Israel</option>
+	<option value="105">Italy</option>
+	<option value="106">Jamaica</option>
+	<option value="107">Japan</option>
+	<option value="241">Jersey</option>
+	<option value="108">Jordan</option>
+	<option value="109">Kazakhstan</option>
+	<option value="110">Kenya</option>
+	<option value="111">Kiribati</option>
+	<option value="112">Korea, Democratic People's Republic of</option>
+	<option value="113">Korea, Republic of</option>
+	<option value="114">Kuwait</option>
+	<option value="115">Kyrgyzstan</option>
+	<option value="116">Lao People's Democratic Republic</option>
+	<option value="117">Latvia</option>
+	<option value="118">Lebanon</option>
+	<option value="119">Lesotho</option>
+	<option value="120">Liberia</option>
+	<option value="121">Libya</option>
+	<option value="122">Liechtenstein</option>
+	<option value="123">Lithuania</option>
+	<option value="124">Luxembourg</option>
+	<option value="125">Macau</option>
+	<option value="126">Macedonia, the former Yugoslav Republic of</option>
+	<option value="127">Madagascar</option>
+	<option value="128">Malawi</option>
+	<option value="129">Malaysia</option>
+	<option value="130">Maldives</option>
+	<option value="131">Mali</option>
+	<option value="132">Malta</option>
+	<option value="133">Marshall Islands</option>
+	<option value="134">Martinique</option>
+	<option value="135">Mauritania</option>
+	<option value="136">Mauritius</option>
+	<option value="137">Mayotte</option>
+	<option value="138">Mexico</option>
+	<option value="139">Micronesia, Federated States of</option>
+	<option value="140">Moldova, Republic of</option>
+	<option value="141">Monaco</option>
+	<option value="142">Mongolia</option>
+	<option value="143">Montserrat</option>
+	<option value="144">Morocco</option>
+	<option value="145">Mozambique</option>
+	<option value="146">Myanmar</option>
+	<option value="147">Namibia</option>
+	<option value="148">Nauru</option>
+	<option value="149">Nepal</option>
+	<option value="150">Netherlands</option>
+	<option value="151">Netherlands Antilles</option>
+	<option value="152">New Caledonia</option>
+	<option value="153">New Zealand</option>
+	<option value="154">Nicaragua</option>
+	<option value="155">Niger</option>
+	<option value="156">Nigeria</option>
+	<option value="157">Niue</option>
+	<option value="158">Norfolk Island</option>
+	<option value="159">Northern Mariana Islands</option>
+	<option value="160">Norway</option>
+	<option value="161">Oman</option>
+	<option value="162">Pakistan</option>
+	<option value="163">Palau</option>
+	<option value="248">Palestinian Territory, Occupied</option>
+	<option value="164">Panama</option>
+	<option value="165">Papua New Guinea</option>
+	<option value="166">Paraguay</option>
+	<option value="167">Peru</option>
+	<option value="168">Philippines</option>
+	<option value="169">Pitcairn</option>
+	<option value="170">Poland</option>
+	<option value="171">Portugal</option>
+	<option value="172">Puerto Rico</option>
+	<option value="173">Qatar</option>
+	<option value="175">Romania</option>
+	<option value="176">Russian Federation</option>
+	<option value="177">Rwanda</option>
+	<option value="174">R&eacute;union</option>
+	<option value="197">Saint Helena</option>
+	<option value="178">Saint Kitts and Nevis</option>
+	<option value="179">Saint Lucia</option>
+	<option value="246">Saint Martin (French part)</option>
+	<option value="198">Saint Pierre and Miquelon</option>
+	<option value="180">Saint Vincent and the Grenadines</option>
+	<option value="181">Samoa</option>
+	<option value="182">San Marino</option>
+	<option value="183">Sao Tome And Principe</option>
+	<option value="184">Saudi Arabia</option>
+	<option value="185">Senegal</option>
+	<option value="245">Serbia</option>
+	<option value="186">Seychelles</option>
+	<option value="187">Sierra Leone</option>
+	<option value="188">Singapore</option>
+	<option value="247">Sint Maarten (Dutch part)</option>
+	<option value="189">Slovakia</option>
+	<option value="190">Slovenia</option>
+	<option value="191">Solomon Islands</option>
+	<option value="192">Somalia</option>
+	<option value="193">South Africa</option>
+	<option value="194">South Georgia and the South Sandwich Islands</option>
+	<option value="195">Spain</option>
+	<option value="196">Sri Lanka</option>
+	<option value="242">St. Barthelemy</option>
+	<option value="243">St. Eustatius</option>
+	<option value="199">Sudan</option>
+	<option value="200">Suriname</option>
+	<option value="201">Svalbard and Jan Mayen</option>
+	<option value="202">Swaziland</option>
+	<option value="203">Sweden</option>
+	<option value="204">Switzerland</option>
+	<option value="205">Syrian Arab Republic</option>
+	<option value="206">Taiwan</option>
+	<option value="207">Tajikistan</option>
+	<option value="208">Tanzania, United Republic of</option>
+	<option value="209">Thailand</option>
+	<option value="237">The Democratic Republic of Congo</option>
+	<option value="61">Timor-Leste</option>
+	<option value="210">Togo</option>
+	<option value="211">Tokelau</option>
+	<option value="212">Tonga</option>
+	<option value="213">Trinidad and Tobago</option>
+	<option value="214">Tunisia</option>
+	<option value="215">Turkey</option>
+	<option value="216">Turkmenistan</option>
+	<option value="217">Turks and Caicos Islands</option>
+	<option value="218">Tuvalu</option>
+	<option value="219">Uganda</option>
+	<option value="220">Ukraine</option>
+	<option value="221">United Arab Emirates</option>
+	<option value="222">United Kingdom</option>
+	<option value="223">United States</option>
+	<option value="224">United States Minor Outlying Islands</option>
+	<option value="225">Uruguay</option>
+	<option value="226">Uzbekistan</option>
+	<option value="227">Vanuatu</option>
+	<option value="228">Vatican City State (Holy See)</option>
+	<option value="229">Venezuela</option>
+	<option value="230">Viet Nam</option>
+	<option value="231">Virgin Islands, British</option>
+	<option value="232">Virgin Islands, U.S.</option>
+	<option value="233">Wallis and Futuna</option>
+	<option value="234">Western Sahara</option>
+	<option value="235">Yemen</option>
+	<option value="238">Zambia</option>
+	<option value="239">Zimbabwe</option>
+</select>
+					</td>
+				</tr>
+					<tr title="State / Province / Region">
+					<td class="key"  >
+						<label class="virtuemart_state_id" for="virtuemart_state_id_field">
+							State / Province / Region <span class="asterisk">*</span>						</label>
+					</td>
+					<td>
+						<select  id="virtuemart_state_id_field" class=" required vm-chzn-select" name="virtuemart_state_id" style="width: 210px">
+						<option value="">-- Select --</option>
+						</select>					</td>
+				</tr>
+					<tr title="Phone">
+					<td class="key"  >
+						<label class="phone_1" for="phone_1_field">
+							Phone						</label>
+					</td>
+					<td>
+						<input type="text" id="phone_1_field" name="phone_1" size="30" value=""  maxlength="32" /> 					</td>
+				</tr>
+					<tr title="Mobile phone">
+					<td class="key"  >
+						<label class="phone_2" for="phone_2_field">
+							Mobile phone						</label>
+					</td>
+					<td>
+						<input type="text" id="phone_2_field" name="phone_2" size="30" value=""  maxlength="32" /> 					</td>
+				</tr>
+					<tr title="Fax">
+					<td class="key"  >
+						<label class="fax" for="fax_field">
+							Fax						</label>
+					</td>
+					<td>
+						<input type="text" id="fax_field" name="fax" size="30" value=""  maxlength="32" /> 					</td>
+				</tr>
+	
+			</table>
+		</fieldset>
+
+<div class="control-buttons">
+	<div id="reg_text">Please use <strong>Register And Checkout</strong> to easily get access to your order history, or use <strong>Checkout as Guest</strong></div>		<button name="register" class="default" type="submit" onclick="javascript:return myValidator(userForm,true);"
+				title="Register And Checkout">Register And Checkout</button>
+					<button name="save" class="default" title="Checkout as Guest" type="submit"
+					onclick="javascript:return myValidator(userForm, false);">Checkout as Guest</button>
+				<button class="default" type="reset"
+				onclick="window.location.href='/shop/cart/cancel'">Cancel</button>
+	</div>
+	<input type="hidden" name="option" value="com_virtuemart"/>
+	<input type="hidden" name="view" value="user"/>
+	<input type="hidden" name="controller" value="user"/>
+	<input type="hidden" name="task" value="saveUser"/>
+	<input type="hidden" name="layout" value="edit_address"/>
+	<input type="hidden" name="address_type" value="BT"/>
+	<input type="hidden" name="0e79a436ae6cbc3b74c8fcd4573e05b9" value="1" />
+</fieldset>
+	</div>
+</form>
+</div>
+
+
+
+
+
+
+<script id="updateChosen_js" type="text/javascript">//<![CDATA[ 
+if (typeof Virtuemart === "undefined")
+	var Virtuemart = {};
+	Virtuemart.updateChosenDropdownLayout = function() {
+		var vm2string = {editImage: 'edit image',select_all_text: 'Select all',select_some_options_text: 'Available for all'};
+		jQuery("select.vm-chzn-select").each( function () {
+			var swidth = jQuery(this).css("width")+10;
+			jQuery(this).chosen({enable_select_all: true,select_all_text : vm2string.select_all_text,select_some_options_text:vm2string.select_some_options_text,disable_search_threshold: 5, width: swidth});
+		});
+	}
+	jQuery(document).ready( function() {
+		Virtuemart.updateChosenDropdownLayout($);
+	}); //]]>
+</script>
+<script id="vm.countryState_js" type="text/javascript">//<![CDATA[ 
+jQuery(document).ready( function($) {
+			$("#virtuemart_country_id_field").vm2front("list",{dest : "#virtuemart_state_id_field",ids : "",prefiks : ""});
+		}); //]]>
+</script>
+<script id="vm.countryStateshipto__js" type="text/javascript">//<![CDATA[ 
+jQuery(document).ready( function($) {
+			$("#shipto_virtuemart_country_id_field").vm2front("list",{dest : "#shipto_virtuemart_state_id_field",ids : "",prefiks : "shipto_"});
+		}); //]]>
+</script>
+<script id="vm.validator_js" type="text/javascript">//<![CDATA[ 
+function setDropdownRequiredByResult(id,prefiks){
+		//console.log('setDropdownRequiredByResult '+prefiks+id);
+		var results = 0;
+
+		var cField = jQuery('#'+prefiks+id+'_field');
+		if(typeof cField!=='undefined' && cField.length > 0){
+			var lField = jQuery('[for="'+prefiks+id+'_field"]');
+			var chznField = jQuery('#'+prefiks+id+'_field_chzn');
+
+			if(chznField.length > 0) {
+			// in case of chznFields
+				results = chznField.find('.chzn-results li').length;
+			} else {
+				//native selectboxes
+				results = cField.find('option').length;
+			}
+
+			if(results<2){
+				cField.removeClass('required');
+				cField.removeAttr('required');
+
+				if (typeof lField!=='undefined') {
+					lField.removeClass('invalid');
+					lField.attr('aria-invalid', 'false');
+					//console.log('Remove invalid lfield',id);
+				}
+			} else if(cField.attr('aria-required')=='true'){
+				cField.addClass('required');
+				cField.attr('required','required');
+
+				lField.addClass('invalid');
+				lField.attr('aria-invalid', 'true');
+			}
+		}
+	}
+
+	function setChznRequired(id,prefiks){
+		//console.log('setChznRequired ',id);
+		var cField = jQuery('#'+prefiks+id+'_field');
+		if(typeof cField!=='undefined' && cField.length > 0){
+
+			var chznField = jQuery('#'+prefiks+id+'_field_chzn');
+			if(chznField.length > 0) {
+				var aField = chznField.find('a');
+				var lField = jQuery('[for="'+prefiks+id+'_field"]');
+
+				if(cField.attr('aria-invalid')=='true'){
+					//console.log('setChznRequired set invalid');
+					aField.addClass('invalid');
+					lField.addClass('invalid');
+				} else {
+					//console.log('setChznRequired set valid');
+					aField.removeClass('invalid');
+					lField.removeClass('invalid');
+				}
+			}
+		}
+	}
+
+
+	function myValidator(f, r) {
+
+		var regfields = ['username','name','password','password2'];
+
+		var requ = '';
+		if(r == true){
+			requ = 'required';
+		}
+
+		for	(i = 0; i < regfields.length; i++) {
+			var elem = jQuery('#'+regfields[i]+'_field');
+			elem.attr('class', requ);
+		}
+
+		setDropdownRequiredByResult('virtuemart_country_id','');
+		setDropdownRequiredByResult('virtuemart_state_id','');
+
+		var prefiks = '';
+		if(prefiks!=''){
+			setDropdownRequiredByResult('virtuemart_country_id',prefiks);
+			setDropdownRequiredByResult('virtuemart_state_id',prefiks);
+		}
+
+
+		if (document.formvalidator.isValid(f)) {
+			if (jQuery('#recaptcha_wrapper').is(':hidden') && (r == true)) {
+				jQuery('#recaptcha_wrapper').show();
+			} else {
+				return true;	//sents the form, we dont use js.submit()
+			}
+		} else {
+			setChznRequired('virtuemart_country_id','');
+			setChznRequired('virtuemart_state_id','');
+			if(prefiks!=''){
+				setChznRequired('virtuemart_country_id',prefiks);
+				setChznRequired('virtuemart_state_id',prefiks);
+			}
+			if (jQuery('#recaptcha_wrapper').is(':hidden') && (r == true)) {
+				jQuery('#recaptcha_wrapper').show();
+			}
+			var msg = 'Required field is missing';
+			alert(msg + ' ');
+		}
+		return false;
+	} //]]>
+</script>
+
+
+</div></div></div></div></section>
+<div id="sp-position2" class="col-xs-10 col-sm-6 col-md-4"><div class="sp-column "><ul class="social-icons"><li><div class="facebook"><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></div></li><li><div class="twitter"><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></div></li><li><div class="google"><a target="_blank" href="#"><i class="fa fa-google-plus"></i></a></div></li><li><div class="pinterest"><a target="_blank" href="#"><i class="fa fa-pinterest"></i></a></div></li><li><div class="youtube"><a target="_blank" href="#"><i class="fa fa-youtube"></i></a></div></li></ul></div></div></div></div></section><section id="sp-bottom"><div class="container"><div class="row"><div id="sp-bottom1" class="col-xs-10 col-sm-6 col-md-4"><div class="sp-column "><div class="sp-module "><h3 class="sp-module-title">About us</h3><div class="sp-module-content">
+
+<div class="custom"  >
+	<p>Ball tip biltong pork belly frankfurter shankle jerky leberkas pig kielbasa kay boudin alcatra short loin.</p>
+<p>Jowl salami leberkas turkey pork brisket meatball turducken flank bilto porke belly ball tip. pork belly frankf urtane bilto</p>
+<p>Phone: +61 3 8376 6284<br />Email: <a href="mailto:info@cakeart.com">info@cakeart.com</a></p>
+<p>329 Queensberry Street, North Melbourne <br />VIC 3051, Australia.</p></div>
+</div></div></div></div><div id="sp-bottom2" class="col-xs-10 col-sm-6 col-md-2"><div class="sp-column "><div class="sp-module "><h3 class="sp-module-title">Links</h3><div class="sp-module-content"><ul class="nav menu">
+<li class="item-570"><a href="{% url 'index' %}" >Home</a></li><li class="item-571"><a href="{% url 'abt' %}" >About us</a></li><li class="item-572"><a href="{% url 'recipe' %}" >Recipes</a></li><li class="item-573"><a href="{% url 'blog' %}" >Blog</a></li><li class="item-574"><a href="/contact" >Contact</a></li></ul>
+</div></div></div></div><div id="sp-bottom4" class="col-xs-10 col-sm-6 col-md-4"><div class="sp-column "><div class="sp-module "><h3 class="sp-module-title">Latest News</h3><div class="sp-module-content"><div class="latestnews recentArticle">
+                <div class="item">
+
+                <div class="row">
+                                        <div class="thumb col-sm-4">
+                        <a href="{% static '/cakeart/blog/83-socola/84-snack-cake' %}">
+                            <img src="{% static '/cakeart/images/slider222.jpg' %}" alt="">
+                        </a>
+                    </div>
+                                        <div class="introtext col-sm-8">
+                        <a class="titleArticle" href="{% static '/cakeart/blog/83-socola/84-snack-cake' %}">
+                            Snack Cake                        </a>
+                        <span class="date">April 14, 2016</span>
+                    </div>
+                </div>
+            </div>
+                <div class="item">
+
+                <div class="row">
+                                        <div class="thumb col-sm-4">
+                        <a href="{% static '/cakeart//blog/81-ice/85-spicy-macadamia-pretzels' %}">
+                            <img src="{% static '/cakeart/images/class.jpg' %}" alt="">
+                        </a>
+                    </div>
+                                        <div class="introtext col-sm-8">
+                        <a class="titleArticle" href="{% static '/cakeart/blog/81-ice/85-spicy-macadamia-pretzels' %}">
+                            Spicy macadamia pretzels                        </a>
+                        <span class="date">March 3, 2016</span>
+                    </div>
+                </div>
+            </div>
+                <div class="item">
+
+                <div class="row">
+                                        <div class="thumb col-sm-4">
+                        <a href="{% static '/cakeart/blog/80-cream/87-banana-split-ice-cream' %}">
+                            <img src="{% static '/cakeart/images/img_gallery_3.jpg' %}" alt="">
+                        </a>
+                    </div>
+                                        <div class="introtext col-sm-8">
+                        <a class="titleArticle" href="{% static '/cakeart/blog/80-cream/87-banana-split-ice-cream' %}">
+                            Banana Split Ice Cream Cake                        </a>
+                        <span class="date">February 2, 2016</span>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div></div></div></div></div></div></section><footer id="sp-footer"><div class="container"><div class="row"><div id="sp-footer1" class="col-sm-12 col-md-12"><div class="sp-column "><span class="sp-copyright"> Designed by <a href="https://foobla.com">SAR</a>.</span></div></div></div></div></footer>
+        <div class="offcanvas-menu">
+            <a href="#" class="close-offcanvas"><i class="fa fa-remove"></i></a>
+            <div class="offcanvas-inner">
+                                    <div class="sp-module "><h3 class="sp-module-title">Search</h3><div class="sp-module-content"><div class="search">
+	<form action="/shop" method="post">
+		<input name="searchword" id="mod-search-searchword" maxlength="200"  class="inputbox search-query" type="text" size="20" placeholder="Search ..." />		<input type="hidden" name="task" value="search" />
+		<input type="hidden" name="option" value="com_search" />
+		<input type="hidden" name="Itemid" value="530" />
+	</form>
+</div>
+</div></div><div class="sp-module "><div class="sp-module-content"><ul class="nav menu">
+<li class="item-437 default"><a href="/" >Home</a></li><li class="item-492"><a href="/blog" >Blog</a></li><li class="item-544"><a href="/recipes" >Recipes</a></li><li class="item-530 current active"><a href="/shop" >Shop</a></li><li class="item-279 deeper parent"><a href="#" >Features</a><ul class="nav-child unstyled small"><li class="item-551"><a href="/features/about-us" >About us</a></li><li class="item-552"><a href="/features/page-with-left-sidebar" >Page with left sidebar</a></li><li class="item-553"><a href="/features/page-with-right-sidebar" >Page with right sidebar</a></li><li class="item-488"><a href="/features/404-page" >404 Page</a></li></ul></li><li class="item-550"><a href="/contact" >Contact</a></li></ul>
+</div></div>
+                            </div>
+        </div>
+    </div>
+        
+</body>
+</html>

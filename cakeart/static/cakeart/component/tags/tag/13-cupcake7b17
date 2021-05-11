@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<feed xmlns="http://www.w3.org/2005/Atom"  xml:lang="en-gb">
+	<title type="text">CakeArt - CakeArt</title>
+	<subtitle type="text"></subtitle>
+	<link rel="alternate" type="text/html" href="http://cakeart.foobla.com"/>
+	<id>http://cakeart.foobla.com/component/tags/tag/13-cupcake</id>
+	<updated>2019-11-28T12:51:53+00:00</updated>
+	<author>
+		<name>cakeart</name>
+		<email>noreply@foobla.com</email>
+	</author>
+	<generator uri="https://www.joomla.org">Joomla! - Open Source Content Management</generator>
+	<link rel="self" type="application/atom+xml" href="http://cakeart.foobla.com/component/tags/tag/13-cupcake?format=feed&amp;type=atom"/>
+	<entry>
+		<title>Chewy peanut butter chocolate chip cookies</title>
+		<link rel="alternate" type="text/html" href="http://cakeart.foobla.com/component/content/article?id=76:chewy-peanut-butter-chocolate-chip-cookies"/>
+		<published>2015-02-02T20:29:50+00:00</published>
+		<updated>2015-02-02T20:29:50+00:00</updated>
+		<id>http://cakeart.foobla.com/component/content/article?id=76:chewy-peanut-butter-chocolate-chip-cookies</id>
+		<author>
+			<name>Super User</name>
+		</author>
+		<summary type="html">&lt;p class=&quot;canvas-text Mb(1.0em) Mb(0)--sm Mt(0.8em)--sm canvas-atom&quot; style=&quot;box-sizing: border-box; margin: 0px 0px 20px; padding: 0px; color: #7a7a7a; font-family: Roboto; font-size: 15px; line-height: 22.5px;&quot; data-type=&quot;text&quot; data-reactid=&quot;.5la0c930u8.0.2.4.0.0.$Col1-0-ContentCanvas.2.4.0:$2&quot;&gt;Today’s cake is a gorgeous green tea-infused dessert that’s not only delicious but a breeze to make. From start to finish it takes less than 20 minutes to assemble and calls for only three ingredients — matcha powder, whipped cream, and Nabisco’s Famous Chocolate Wafers. The dessert is a riff of the famous chocolate refrigerator roll, also known as an icebox cake. It comes from i am a food blog’s Stephanie Le in Vancouver. The miniature cake is an example of what Le does best — taking an old favorite, adding her own spin with inviting ingredients, and capturing it all with beautiful, lush photos. It’s no wonder Saveur named her online recipe journal Best Blog of the Year in 2014.&lt;/p&gt;
+</summary>
+		<content type="html">&lt;p class=&quot;canvas-text Mb(1.0em) Mb(0)--sm Mt(0.8em)--sm canvas-atom&quot; style=&quot;box-sizing: border-box; margin: 0px 0px 20px; padding: 0px; color: #7a7a7a; font-family: Roboto; font-size: 15px; line-height: 22.5px;&quot; data-type=&quot;text&quot; data-reactid=&quot;.5la0c930u8.0.2.4.0.0.$Col1-0-ContentCanvas.2.4.0:$2&quot;&gt;Today’s cake is a gorgeous green tea-infused dessert that’s not only delicious but a breeze to make. From start to finish it takes less than 20 minutes to assemble and calls for only three ingredients — matcha powder, whipped cream, and Nabisco’s Famous Chocolate Wafers. The dessert is a riff of the famous chocolate refrigerator roll, also known as an icebox cake. It comes from i am a food blog’s Stephanie Le in Vancouver. The miniature cake is an example of what Le does best — taking an old favorite, adding her own spin with inviting ingredients, and capturing it all with beautiful, lush photos. It’s no wonder Saveur named her online recipe journal Best Blog of the Year in 2014.&lt;/p&gt;
+</content>
+		<category term="Chewy peanut butter chocolate chip cookies" />
+	</entry>
+</feed>

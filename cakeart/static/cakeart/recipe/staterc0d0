@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>CakeArt - Stater</title>
+		<description><![CDATA[]]></description>
+		<link>http://cakeart.foobla.com/recipe/stater</link>
+		<lastBuildDate>Thu, 28 Nov 2019 12:52:03 +0000</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="http://cakeart.foobla.com/recipe/stater?format=feed&amp;type=rss"/>
+		<language>en-gb</language>
+		<managingEditor>noreply@foobla.com (cakeart)</managingEditor>
+		<item>
+			<title>Diploma Cake</title>
+			<link>http://cakeart.foobla.com/recipe/stater/81-diploma-cake</link>
+			<guid isPermaLink="true">http://cakeart.foobla.com/recipe/stater/81-diploma-cake</guid>
+			<description><![CDATA[<p><span style="color: #7a7a7a; font-family: Roboto; font-size: 15px; line-height: 22.5px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></p>]]></description>
+			<author>noreply@foobla.com (Super User)</author>
+			<category>Stater</category>
+			<pubDate>Fri, 01 Apr 2016 07:52:40 +0000</pubDate>
+		</item>
+		<item>
+			<title>Champagne Brunch Cookies</title>
+			<link>http://cakeart.foobla.com/recipe/stater/108-champagne-brunch-cookies</link>
+			<guid isPermaLink="true">http://cakeart.foobla.com/recipe/stater/108-champagne-brunch-cookies</guid>
+			<description><![CDATA[<p><span style="color: #7a7a7a; font-family: Roboto; font-size: 15px; line-height: 22.5px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></p>]]></description>
+			<author>noreply@foobla.com (Super User)</author>
+			<category>Stater</category>
+			<pubDate>Fri, 01 Apr 2016 07:52:40 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

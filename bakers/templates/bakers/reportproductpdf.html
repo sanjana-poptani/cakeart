@@ -1,0 +1,127 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Baker | Home</title>
+    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 10]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Datta Able Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
+    <meta name="keywords" content="admin templates, bootstrap admin templates, bootstrap 4, dashboard, dashboard templets, sass admin templets, html admin templates, responsive, bootstrap admin templates free download,premium bootstrap admin templates, datta able, datta able bootstrap admin template, free admin theme, free dashboard template"/>
+    <meta name="author" content="CodedThemes"/>
+
+    <!-- Favicon icon -->
+    <link rel="icon" href="{% static '/bakers/images/favicon.ico' %}" type="image/x-icon">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="{% static '/bakers/fonts/fontawesome/css/fontawesome-all.min.css' %}">
+    <!-- animation css -->
+    <link rel="stylesheet" href="{% static '/bakers/plugins/animation/css/animate.min.css' %}">
+    <!-- vendor css -->
+    <link rel="stylesheet" href="{% static '/bakers/css/style.css' %}">
+
+</head>
+
+<body>
+    <!-- [ Pre-loader ] start -->
+    <div class="loader-bg">
+        <div class="loader-track">
+            <div class="loader-fill"></div>
+        </div>
+    </div>
+    <!-- [ Pre-loader ] End -->
+
+    <!-- [ navigation menu ] start -->
+    <!-- [ navigation menu ] end -->
+
+    <!-- [ Header ] start -->
+    <!-- [ Header ] end -->
+
+    <!-- [ Main Content ] start -->
+    <section class="pcoded-main-container">
+        <div class="pcoded-wrapper">
+            <div class="pcoded-content">
+                <div class="pcoded-inner-content">
+                    <!-- [ breadcrumb ] start -->
+                    <div class="page-header">
+                        <div class="page-block">
+                            <div class="row align-items-center">
+                                <div class="col-md-12">
+                                    <div class="page-header-title">
+                                        
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- [ breadcrumb ] end -->
+                                <!-- [ Hover-table ] start -->
+                                <div class="col-xl-12">
+                                    <div class="card">
+                                        <div class="card-block table-border-style">
+                                            <div class="table-responsive">
+                                                <center><h1 style="color: black;font-family: Arial, Helvetica, sans-serif;">CakeArt <img src="{% static '/bakers/images/cakelogo1' %}" height="100" width="100" alt="" /> 
+                                                </h1></center>
+                                                      
+                                                <table class="table table-hover" border="1px" style="font-size: 18px;text-align:center;vertical-align: middle" width="100%" height="100%">
+                                                    <thead>
+                                                        <tr vertical-align="middle">
+                                                            <th>Product Name</th>
+                                                            <th>Product Price</th>
+                                                            <th>Product Type</th>
+                                                            <th>Product Category</th>
+                                                            <th>Type of Decoration</th>
+                                                            <th>Product Theme</th>
+                                                            <th>Product Flavor</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        {% if allprod %}
+                                                        {% for u in allprod %}
+                                                        <tr style="vertical-align: middle; display: inline-block; line-height: 50px " valign="middle">
+                                                            <td>{{u.product_name}}</td>
+                                                            <td>{{u.product_price}}/-</td>
+                                                            <td>{{u.product_type}}</td>
+                                                            <td>{{u.category_id.category_name}}</td>
+                                                            <td>{{u.decoration_id.decoration_name}}</td>
+                                                            <td>{{u.theme_id.theme_name}}</td>
+                                                            <td>{{u.flavor_id.flavour_name}}</td>
+                                                                <!-- <td><form action="{% url 'delproduct' pk=u.id %}" name="frm" method="POST">
+                                                                        {% csrf_token %}
+                                                                        <input type="hidden" name="id" value="{{u.id}}">
+                                                                        <input type="submit" name="action" class="btn btn-danger" onclick="return clickevent()" data-toggle="tooltip" value="✕"></button>
+                                                                    </form>
+                                                                </td> -->
+                                                        </tr>
+                                                        {% endfor %}
+                                                        {% endif %}
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- [ Hover-table ] end -->
+
+                            <!-- [ Main Content ] end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Required Js -->
+<script src="{% static '/bakers/js/vendor-all.min.js' %}"></script>
+	<script src="{% static '/bakers/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static '/bakers/js/pcoded.min.js' %}"></script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>CakeArt - CakeArt</title>
+		<description><![CDATA[]]></description>
+		<link>http://cakeart.foobla.com/component/tags/tag/14</link>
+		<lastBuildDate>Thu, 28 Nov 2019 12:51:42 +0000</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="http://cakeart.foobla.com/component/tags/tag/14-chocolate?format=feed&amp;type=rss"/>
+		<language>en-gb</language>
+		<managingEditor>noreply@foobla.com (cakeart)</managingEditor>
+		<item>
+			<title>Chocolate Cake for Two</title>
+			<link>http://cakeart.foobla.com/component/content/article?id=75:chocolate-cake-for-two</link>
+			<guid isPermaLink="true">http://cakeart.foobla.com/component/content/article?id=75:chocolate-cake-for-two</guid>
+			<description><![CDATA[<p class="canvas-text Mb(1.0em) Mb(0)--sm Mt(0.8em)--sm canvas-atom" style="box-sizing: border-box; margin: 0px 0px 20px; padding: 0px; color: #7a7a7a; font-family: Roboto; font-size: 15px; line-height: 22.5px;" data-type="text" data-reactid=".hu9obyxgjk.0.2.4.0.0.$Col1-0-ContentCanvas.2.4.0:$2">This mug cake embodies everything a chocolate cake should be — dark, decadent and so rich, the only way to wash it down is with a cold glass of milk. What makes this one a step above all others it only takes 30 minutes from start to finish and is the perfect amount for two. This tiny treat comes from Sarah Fennel from Ann Arbor, Mich., who runs the baking blog Broma Bakery, which she started in college after becoming homesick for her mother’s cookies.</p>
+]]></description>
+			<category>Chocolate Cake for Two</category>
+			<pubDate>Mon, 02 Feb 2015 20:29:50 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

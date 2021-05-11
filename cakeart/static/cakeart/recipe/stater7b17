@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<feed xmlns="http://www.w3.org/2005/Atom"  xml:lang="en-gb">
+	<title type="text">CakeArt - Stater</title>
+	<subtitle type="text"></subtitle>
+	<link rel="alternate" type="text/html" href="http://cakeart.foobla.com"/>
+	<id>http://cakeart.foobla.com/recipe/stater</id>
+	<updated>2019-11-28T12:52:04+00:00</updated>
+	<author>
+		<name>cakeart</name>
+		<email>noreply@foobla.com</email>
+	</author>
+	<generator uri="https://www.joomla.org">Joomla! - Open Source Content Management</generator>
+	<link rel="self" type="application/atom+xml" href="http://cakeart.foobla.com/recipe/stater?format=feed&amp;type=atom"/>
+	<entry>
+		<title>Diploma Cake</title>
+		<link rel="alternate" type="text/html" href="http://cakeart.foobla.com/recipe/stater/81-diploma-cake"/>
+		<published>2016-04-01T07:52:40+00:00</published>
+		<updated>2016-04-01T07:52:40+00:00</updated>
+		<id>http://cakeart.foobla.com/recipe/stater/81-diploma-cake</id>
+		<author>
+			<name>Super User</name>
+			<email>noreply@foobla.com</email>
+		</author>
+		<summary type="html">&lt;p&gt;&lt;span style=&quot;color: #7a7a7a; font-family: Roboto; font-size: 15px; line-height: 22.5px;&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/span&gt;&lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt;&lt;span style=&quot;color: #7a7a7a; font-family: Roboto; font-size: 15px; line-height: 22.5px;&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/span&gt;&lt;/p&gt;</content>
+		<category term="Stater" />
+	</entry>
+	<entry>
+		<title>Champagne Brunch Cookies</title>
+		<link rel="alternate" type="text/html" href="http://cakeart.foobla.com/recipe/stater/108-champagne-brunch-cookies"/>
+		<published>2016-04-01T07:52:40+00:00</published>
+		<updated>2016-04-01T07:52:40+00:00</updated>
+		<id>http://cakeart.foobla.com/recipe/stater/108-champagne-brunch-cookies</id>
+		<author>
+			<name>Super User</name>
+			<email>noreply@foobla.com</email>
+		</author>
+		<summary type="html">&lt;p&gt;&lt;span style=&quot;color: #7a7a7a; font-family: Roboto; font-size: 15px; line-height: 22.5px;&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/span&gt;&lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt;&lt;span style=&quot;color: #7a7a7a; font-family: Roboto; font-size: 15px; line-height: 22.5px;&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/span&gt;&lt;/p&gt;</content>
+		<category term="Stater" />
+	</entry>
+</feed>

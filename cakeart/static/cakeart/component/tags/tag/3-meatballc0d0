@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>CakeArt - CakeArt</title>
+		<description><![CDATA[]]></description>
+		<link>http://cakeart.foobla.com/component/tags/tag/3</link>
+		<lastBuildDate>Thu, 28 Nov 2019 12:51:40 +0000</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="http://cakeart.foobla.com/component/tags/tag/3-meatball?format=feed&amp;type=rss"/>
+		<language>en-gb</language>
+		<managingEditor>noreply@foobla.com (cakeart)</managingEditor>
+		<item>
+			<title>Chocolate Marble Cake</title>
+			<link>http://cakeart.foobla.com/component/content/article?id=74:chocolate-marble-cake</link>
+			<guid isPermaLink="true">http://cakeart.foobla.com/component/content/article?id=74:chocolate-marble-cake</guid>
+			<description><![CDATA[<p class="canvas-text Mb(1.0em) Mb(0)--sm Mt(0.8em)--sm canvas-atom" style="box-sizing: border-box; margin: 0px 0px 20px; padding: 0px; color: #7a7a7a; font-family: Roboto; font-size: 15px; line-height: 22.5px;" data-type="text" data-reactid=".2cgjdhbkjr4.0.2.4.0.0.$Col1-0-ContentCanvas.2.4.0:$2">We found today’s cake on Zoe Bakes. It’s run by Zoë François, and, well, she knows how to bake!</p>
+<p class="canvas-text Mb(1.0em) Mb(0)--sm Mt(0.8em)--sm canvas-atom" style="box-sizing: border-box; margin: 0px 0px 20px; padding: 0px; color: #7a7a7a; font-family: Roboto; font-size: 15px; line-height: 22.5px;" data-type="text" data-reactid=".2cgjdhbkjr4.0.2.4.0.0.$Col1-0-ContentCanvas.2.4.0:$3">François has authored two best-selling bread books, <i style="box-sizing: border-box; margin: 0px; padding: 0px;">The New Artisan Bread in Five Minutes a Day </i>and <i style="box-sizing: border-box; margin: 0px; padding: 0px;">Artisan Pizza and Flatbread in Five Minutes a Day, s</i>he’s a graduate of New York’s Culinary Institute of America, and she has worked as a pastry chef in one of Minneapolis’s finest restaurants, Tilia. She now teaches baking all over the country.</p>
+]]></description>
+			<category>Chocolate Marble Cake</category>
+			<pubDate>Mon, 02 Feb 2015 20:29:50 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

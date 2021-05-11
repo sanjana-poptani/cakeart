@@ -1,0 +1,148 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 10]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Datta Able Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
+    <meta name="keywords" content="admin templates, bootstrap admin templates, bootstrap 4, dashboard, dashboard templets, sass admin templets, html admin templates, responsive, bootstrap admin templates free download,premium bootstrap admin templates, datta able, datta able bootstrap admin template, free admin theme, free dashboard template"/>
+    <meta name="author" content="CodedThemes"/>
+
+    <!-- Favicon icon -->
+    <link rel="icon" href="{% static '/bakers/images/favicon.ico' %}" type="image/x-icon">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="{% static '/bakers/fonts/fontawesome/css/fontawesome-all.min.css' %}">
+    <!-- animation css -->
+    <link rel="stylesheet" href="{% static '/bakers/plugins/animation/css/animate.min.css' %}">
+    <!-- vendor css -->
+    <link rel="stylesheet" href="{% static '/bakers/css/style.css' %}">
+
+</head>
+
+<body>
+    <!-- [ Pre-loader ] start -->
+    <div class="loader-bg">
+        <div class="loader-track">
+            <div class="loader-fill"></div>
+        </div>
+    </div>
+    <!-- [ Pre-loader ] End -->
+
+    <!-- [ navigation menu ] start -->
+    <nav class="pcoded-navbar">
+            <div class="navbar-wrapper" style="font-size: 20px;">
+                <div class="navbar-content scroll-div">
+                    <ul class="nav pcoded-inner-navbar">
+                        <li data-username="Manage lists" class="nav-item pcoded-hasmenu" style="color: black;">
+                            <a href="javascript:" class="nav-link " style="color: white; "><span class="pcoded-micon" style="color: white"><i class="feather icon-box"></i></span><span class="pcoded-mtext" style="color: white;">Manage</span></a>
+                            <ul class="pcoded-submenu">
+                                <li class="nav-item pcoded-hasmenu"><a href="javascript:" class="nav-link " style="color: white;"><span class="pcoded-micon"><i class="feather icon-box"></i></span><span class="pcoded-mtext">Orders</span></a>
+                                    <ul class="pcoded-submenu">
+                                        <li class=""><a href="{% url 'tbl1' %}" class="" style="color: white;">Edit</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item pcoded-hasmenu"><a href="javascript:" class="nav-link " style="color: white;"><span class="pcoded-micon"><i class="feather icon-box"></i></span><span class="pcoded-mtext">Products</span></a>
+                                    <ul class="pcoded-submenu">
+                                            <li class=""><a href="{% url 'addpro' %}" class="" style="color: white;">Add</a></li>
+                                            <li class=""><a href="{% url 'showprod' %}" class="" style="color: white;">Edit</a></li>
+                                    </ul>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="" data-username="View Lists"><a href="{% url 'cate' %}" style="color: white;"><span class="pcoded-micon" style="color: white;"><i class="feather icon-box"></i></span style="color: white;">View Categories</a>                       
+                        </li>
+                        <li class="nav-item pcoded-hasmenu"><a href="javascript:" class="nav-link " style="color: white;"><span class="pcoded-micon"><i class="feather icon-box"></i></span><span class="pcoded-mtext">View Reports</span></a>
+                            <ul class="pcoded-submenu">
+                                <li class=""><a href="{% url 'reportorder' %}" class="" style="color: white;">Orders</a></li>
+                                <li class=""><a href="{% url 'reportproduct' %}" class="" style="color: white;">Products</a></li>
+                            </ul>
+                        </li>                        
+                   </ul>
+                </div>
+            </div>
+        </nav>
+    <!-- [ navigation menu ] end -->
+
+    <!-- [ Header ] start -->
+    <header class="navbar pcoded-header navbar-expand-lg navbar-light">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li><a href="javascript:" class="full-screen" onclick="javascript:toggleFullScreen()"><i class="feather icon-maximize"></i></a></li>
+                </ul>
+            <ul class="navbar-nav ml-auto">
+                <li>
+                    <div class="dropdown drp-user">
+                        <a href="javascript:" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="icon feather icon-settings"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right profile-notification">
+                            <div class="pro-head">
+                                <img src="{% static '/vendors/images/user/avatar-1.jpg' %}" class="img-radius" alt="User-Profile-Image">
+                                <span>{% if all_cust %}
+                                    {{all_cust.firstname}} </span>
+                                <a href="{% url 'logout' %}" class="dud-logout" title="Logout">
+                                    <i class="feather icon-log-out"></i>
+                                </a>
+                            </div>
+                            <ul class="pro-body">
+                                <li><a href="{% url 'reqpasswrd' %}" class="dropdown-item"><i class="feather icon-settings"></i> Change Password</a></li>
+                                <li><a href="{% url 'profile' pk=all_cust.id %}" class="dropdown-item"><i class="feather icon-user"></i> Profile</a></li>
+                            </ul>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- [ Header ] end -->
+
+    <!-- [ Main Content ] start -->
+    <section class="pcoded-main-container">
+        <div class="pcoded-wrapper">
+            <div class="pcoded-content">
+                <div class="pcoded-inner-content">
+                    <!-- [ breadcrumb ] start -->
+                    <div class="page-header">
+                        <div class="page-block">
+                            <div class="row align-items-center">
+                                <div class="col-md-12">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- [ breadcrumb ] end -->
+                                <!-- [ Hover-table ] start -->
+                                <div class="col-xl-12">
+                                    <div class="card">
+                                    <div class="card-block table-border-style">
+                                            <div class="table-responsive">
+                                                {% if all_cust %}
+                                                <h1>Order cancelled </h1>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                </div>
+                                <!-- [ Hover-table ] end -->
+
+                            <!-- [ Main Content ] end -->
+                        
+    </section>
+    <!-- Required Js -->
+<script src="{% static '/bakers/js/vendor-all.min.js' %}"></script>
+	<script src="{% static '/bakers/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static '/bakers/js/pcoded.min.js' %}"></script>
+
+</body>
+</html>

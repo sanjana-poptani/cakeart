@@ -1,0 +1,264 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Admin | Home</title>
+    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 10]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Datta Able Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
+    <meta name="keywords" content="admin templates, bootstrap admin templates, bootstrap 4, dashboard, dashboard templets, sass admin templets, html admin templates, responsive, bootstrap admin templates free download,premium bootstrap admin templates, datta able, datta able bootstrap admin template, free admin theme, free dashboard template"/>
+    <meta name="author" content="CodedThemes"/>
+
+    <!-- Favicon icon -->
+    <link rel="icon" href="{% static '/vendors/images/favicon.ico' %}" type="image/x-icon">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="{% static '/vendors/fonts/fontawesome/css/fontawesome-all.min.css' %}">
+    <!-- animation css -->
+    <link rel="stylesheet" href="{% static '/vendors/plugins/animation/css/animate.min.css' %}">
+    <!-- vendor css -->
+    <link rel="stylesheet" href="{% static '/bakers/css/style.css' %}">
+
+</head>
+
+<body>
+    <!-- [ Pre-loader ] start -->
+    <div class="loader-bg">
+        <div class="loader-track">
+            <div class="loader-fill"></div>
+        </div>
+    </div>
+    <!-- [ Pre-loader ] End -->
+
+    <!-- [ navigation menu ] start -->
+    <nav class="pcoded-navbar">
+        <div class="navbar-wrapper">
+            <div class="navbar-content scroll-div">
+                <ul class="nav pcoded-inner-navbar">
+                    <li class="nav-item pcoded-menu-caption">
+                        <label>Navigation</label>
+                    </li>
+                    <li data-username="Manage lists" class="nav-item pcoded-hasmenu">
+                        <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="feather icon-box"></i></span><span class="pcoded-mtext">Manage</span></a>
+                        <ul class="pcoded-submenu">
+                                        <li class="nav-item pcoded-hasmenu"><a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="feather icon-box"></i></span><span class="pcoded-mtext">Vendors</span></a>
+                                            <ul class="pcoded-submenu">
+                                                <li class=""><a href="{% url 'table' %}" class="">Edit</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item pcoded-hasmenu"><a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="feather icon-box"></i></span><span class="pcoded-mtext">Bakers</span></a>
+                                            <ul class="pcoded-submenu">
+                                                <li class=""><a href="{% url 'table2' %}" class="">Edit</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item pcoded-hasmenu"><a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="feather icon-box"></i></span><span class="pcoded-mtext">Categories</span></a>
+                                            <ul class="pcoded-submenu">
+                                                    <li class=""><a href="{% url 'addcat' %}" class="">Add</a></li>
+                                                    <li class=""><a href="{% url 'table3' %}" class="">Edit</a></li>
+                                                </ul>
+                                            </li>
+                                        <li class="nav-item pcoded-hasmenu"><a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="feather icon-box"></i></span><span class="pcoded-mtext">Packages</span></a>
+                                                <ul class="pcoded-submenu">
+                                                        <li class=""><a href="{% url 'addpack' %}" class="">Add</a></li>
+                                                        <li class=""><a href="{% url 'table4' %}" class="">Edit</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                    </li>
+                    </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- [ navigation menu ] end -->
+
+    <!-- [ Header ] start -->
+    <header class="navbar pcoded-header navbar-expand-lg navbar-light">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li><a href="javascript:" class="full-screen" onclick="javascript:toggleFullScreen()"><i class="feather icon-maximize"></i></a></li>
+                </ul>
+            <ul class="navbar-nav ml-auto">
+                <li>
+                    <div class="dropdown drp-user">
+                        <a href="javascript:" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="icon feather icon-settings"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right profile-notification">
+                            <div class="pro-head">
+                                <img src="{% static '/vendors/images/user/avatar-1.jpg' %}" class="img-radius" alt="User-Profile-Image">
+                                {% if profile %}
+                                <span>{{profile}}</span>
+                                <a href="{% url 'logout' %}" class="dud-logout" title="Logout">
+                                    <i class="feather icon-log-out"></i>
+                                </a>
+                                {% endif %}
+                                {% if all_cust %}
+                                <span>{{all_cust.firstname}}</span>
+                                <a href="{% url 'logout' %}" class="dud-logout" title="Logout">
+                                    <i class="feather icon-log-out"></i>
+                                </a>
+                                {% endif %}
+                            </div>
+                            <ul class="pro-body">
+                                <li><a href="javascript:" class="dropdown-item"><i class="feather icon-settings"></i> Settings</a></li>
+                                <li><a href="javascript:" class="dropdown-item"><i class="feather icon-user"></i> Profile</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- [ Header ] end -->
+
+    <!-- [ Main Content ] start -->
+    <section class="pcoded-main-container">
+        <div class="pcoded-wrapper">
+            <div class="pcoded-content">
+                <div class="pcoded-inner-content">
+                    <!-- [ breadcrumb ] start -->
+                    <div class="page-header">
+                        <div class="page-block">
+                            <div class="row align-items-center">
+                                <div class="col-md-12">
+                                    <div class="page-header-title">
+                                        <h5 class="m-b-10">Manage Lists</h5>
+                                    </div>
+                                   </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- [ breadcrumb ] end -->
+                                <!-- [ Hover-table ] start -->
+                                <div class="col-xl-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5>Manage Vendors</h5>              
+                                        </div>
+                                        <div class="card-block table-border-style">
+                                            <div class="table-responsive">
+                                                <table class="table table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>ID</th>
+                                                            <th>First Name</th>
+                                                            <th>Last Name</th>
+                                                            <th>Username</th>
+                                                            <th>License</th>
+                                                            <th>Edit</th>
+                                                            <th>Delete</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody></tbody>
+                                                            {% if vndr %}
+                                                            {% for u in vndr %}
+                                                        <tr>
+                                                            <th scope="row">{{u.id}}</th>
+                                                            <td>{{u.firstname}}</td>
+                                                            <td>{{u.lastname}}</td>
+                                                            <td>{{u.email}}</td>
+                                                            <form action="{% url 'viewpdf' %}" method="POST"> {% csrf_token %}
+                                                            <td><input type="submit" value="{{u.License.url}}" style="border: 0px;color:blue;background-color: white;cursor: pointer;" name="link"></form></td>
+                                                            <td><form action="{% url 'editpage' pk=u.id %}" name="frm" method="POST">
+                                                                {% csrf_token %}
+                                                                <input type="hidden" name="id" value="{{u.id}}">
+                                                                <input type="submit" name="action" class="btn btn-primary" data-toggle="tooltip" value="🖉"></button>
+                                                            </form></td>
+                                                            <td>
+                                                                    <script>
+                                                                            function clickevent(){
+                                                                                return confirm("Are you sure you want to delete?")
+                                                                            }
+                                                                            function callfn(){
+                                                                                clickevent();
+                                                                                alert("One item deleted successfully!!")
+                                                                            }
+                                                                        </script>
+                                                                <form action="{% url 'delpg' pk=u.id %}" name="frm" method="POST">
+                                                                    {% csrf_token %}
+                                                                    <input type="hidden" name="id" value="{{u.id}}">
+                                                                    <input type="submit" name="action" class="btn btn-danger" onclick="callfn();" data-toggle="tooltip" value="✕"></button>
+                                                                </form>
+                                                            </td>
+                                                        </tr>
+                                                        {% endfor %}
+                                                        {% endif %}
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- [ Hover-table ] end -->
+
+                            <!-- [ Main Content ] end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- [ Main Content ] end -->
+
+    <!-- Warning Section Starts -->
+    <!-- Older IE warning message -->
+    <!--[if lt IE 11]>
+        <div class="ie-warning">
+            <h1>Warning!!</h1>
+            <p>You are using an outdated version of Internet Explorer, please upgrade
+               <br/>to any of the following web browsers to access this website.
+            </p>
+            <div class="iew-container">
+                <ul class="iew-download">
+                    <li>
+                        <a href="http://www.google.com/chrome/">
+                            <img src="{% static '/vendors/images/browser/chrome.png" alt="Chrome">
+                            <div>Chrome</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.mozilla.org/en-US/firefox/new/">
+                            <img src="{% static '/vendors/images/browser/firefox.png" alt="Firefox">
+                            <div>Firefox</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.opera.com">
+                            <img src="{% static '/vendors/images/browser/opera.png" alt="Opera">
+                            <div>Opera</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.apple.com/safari/">
+                            <img src="{% static '/vendors/images/browser/safari.png" alt="Safari">
+                            <div>Safari</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                            <img src="{% static '/vendors/images/browser/ie.png" alt="">
+                            <div>IE (11 & above)</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p>Sorry for the inconvenience!</p>
+        </div>
+    <![endif]-->
+    <!-- Warning Section Ends -->
+
+    <!-- Required Js -->
+<script src="{% static '/vendors/js/vendor-all.min.js' %}"></script>
+	<script src="{% static '/vendors/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static '/bakers/js/pcoded.min.js' %}"></script>
+
+</body>
+</html>
